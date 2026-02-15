@@ -48,7 +48,7 @@ export default function GettingToEvents() {
                 ))}
 
                 {/* Optional list */}
-                {section.list && (
+                {"list" in section && section.list && (
                   <ul className="ml-0 space-y-2 text-left md:ml-6">
                     {section.list.map((item, i) => (
                       <li
@@ -62,7 +62,7 @@ export default function GettingToEvents() {
                 )}
 
                 {/* Optional note */}
-                {section.note && (
+                {"note" in section && section.note && (
                   <p className="font-serif-main text-base italic leading-relaxed text-olive/70 md:text-lg">
                     {section.note}
                   </p>
