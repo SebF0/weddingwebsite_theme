@@ -99,6 +99,51 @@ export default function TimelineIcon({ name, className = "" }: TimelineIconProps
         </svg>
       );
 
+    case "plane":
+      return (
+        <svg {...props}>
+          {/* Airplane */}
+          <path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+        </svg>
+      );
+
+    case "car":
+      return (
+        <svg {...props}>
+          {/* Car */}
+          <path d="M5 11l1.5-4.5h11L19 11" />
+          <path d="M4 16v-5h16v5a2 2 0 01-2 2H6a2 2 0 01-2-2z" />
+          <circle cx="7" cy="16" r="1.5" />
+          <circle cx="17" cy="16" r="1.5" />
+        </svg>
+      );
+
+    case "countryside":
+      return (
+        <svg {...props}>
+          {/* Countryside cottage/house with tree */}
+          <path d="M3 20h7v-7h4v7h7v-9l-9-7-9 7v9z" />
+          <rect x="9" y="13" width="6" height="4" />
+          <circle cx="18" cy="8" r="2" />
+          <path d="M18 10c0 2-1 3-1 3h2s-1-1-1-3z" />
+        </svg>
+      );
+
+    case "city":
+      return (
+        <svg {...props}>
+          {/* City buildings skyline */}
+          <rect x="3" y="8" width="4" height="13" />
+          <rect x="9" y="4" width="6" height="17" />
+          <rect x="17" y="10" width="4" height="11" />
+          <rect x="10" y="6" width="1" height="1" fill="currentColor" />
+          <rect x="13" y="6" width="1" height="1" fill="currentColor" />
+          <rect x="10" y="9" width="1" height="1" fill="currentColor" />
+          <rect x="13" y="9" width="1" height="1" fill="currentColor" />
+          <rect x="18" y="12" width="1" height="1" fill="currentColor" />
+        </svg>
+      );
+
     default:
       return (
         <svg {...props}>

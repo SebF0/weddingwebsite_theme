@@ -5,11 +5,11 @@ import TimelineIcon from "@/components/icons/TimelineIcon";
 const THE_WEEKEND_IMAGE_PATH = "/Assets/Seb+Lou_CoolBoat.jpeg";
 
 /**
- * Weekend events section with alternating day blocks.
- * Background image with overlay for dramatic styling.
+ * Dark-themed section for Sunday events with vertical timeline.
+ * Simple stacked layout with background image and overlay.
  */
 export default function TheWeekend() {
-  const { heading, subheading, days } = SITE_CONTENT.theWeekend;
+  const { heading, subheading, timeline, dresscode, children } = SITE_CONTENT.theWeekend;
 
   return (
     <section
@@ -37,102 +37,62 @@ export default function TheWeekend() {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-6 md:px-10 lg:px-16">
-        {/* Section heading */}
-  {/*       <div className="text-center">
-          <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-white md:text-4xl">
-            {heading}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl font-script text-lg text-white/90 md:text-xl">
-            {subheading}
-          </p>
-        </div> */}
+      <div className="relative z-10 mx-auto px-6 text-center md:px-10">
+        <div className="mx-auto w-full max-w-3xl bg-olive/60 px-6 py-8 md:px-10 md:py-12 lg:px-16 lg:py-16">
+          <div className="mx-auto max-w-2xl">
+            {/* Heading */}
+            <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-white md:text-4xl">
+              {heading}
+            </h2>
 
-        {/* Day blocks - alternating layouts */}
-        <div className="mt-16 space-y-12 md:mt-20 md:space-y-16">
-          {days.map((day, index) => {
-            const isEven = index % 2 === 0;
-            const hasTimeline = "timeline" in day && Array.isArray(day.timeline);
+            {/* Subheading */}
+            <p className="mx-auto mt-4 max-w-lg font-script text-lg text-white/90 md:text-xl">
+              {subheading}
+            </p>
 
-            return (
-              <div
-                key={day.name}
-                className={`flex flex-col gap-6 md:flex-row md:items-stretch md:gap-10 ${
-                  isEven ? "" : "md:flex-row-reverse"
-                }`}
-              >
-                {/* Day name and title */}
-                <div className="flex md:w-1/3">
-                  <div className="flex h-full w-full flex-col justify-center bg-olive/60 px-6 py-6 md:px-8 md:py-8">
-                    <p className="font-serif-main text-sm uppercase tracking-wedding-wide text-white/70 md:text-base">
-                      {day.name}
+            {/* Timeline */}
+            <div className="mt-10 space-y-6 text-left md:mt-12">
+              {timeline.map((event) => (
+                <div
+                  key={event.label}
+                  className="flex items-start gap-4"
+                >
+                  {/* Icon */}
+                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border border-white/30 md:h-14 md:w-14">
+                    <TimelineIcon
+                      name={event.icon}
+                      className="h-6 w-6 text-white/70 md:h-7 md:w-7"
+                    />
+                  </div>
+
+                  {/* Time and description */}
+                  <div className="flex-1 pt-1">
+                    <div className="flex flex-wrap items-baseline gap-2">
+                      <span className="font-serif-main text-sm uppercase tracking-wider text-white/80 md:text-base">
+                        {event.time}
+                      </span>
+                      <span className="font-serif-main text-base text-white md:text-lg">
+                        {event.label}
+                      </span>
+                    </div>
+                    <p className="mt-1 font-serif-main text-sm leading-relaxed text-white/80 md:text-base">
+                      {event.description}
                     </p>
-                    <h3 className="mt-2 font-script text-3xl text-white md:text-4xl">
-                      {day.title}
-                    </h3>
                   </div>
                 </div>
+              ))}
+            </div>
 
-                {/* Day details */}
-                <div className="flex md:w-2/3">
-                  <div className="flex h-full w-full flex-col bg-olive/60 px-6 py-6 md:px-8 md:py-8">
-                    <p className="font-serif-main text-base leading-relaxed text-white/90 md:text-lg">
-                      {day.description}
-                    </p>
+            {/* Dresscode */}
+            <p className="mt-8 border-t border-white/20 pt-6 text-center font-serif-main text-sm italic text-white/90 md:text-base">
+              Dresscode: {dresscode}
+            </p>
 
-                    {/* Timeline for Sunday */}
-                    {hasTimeline && (
-                      <div className="mt-6 space-y-4 border-t border-white/20 pt-6">
-                        {day.timeline.map((event: any) => (
-                          <div
-                            key={event.label}
-                            className="flex items-start gap-4"
-                          >
-                            {/* Icon */}
-                            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-white/30">
-                              <TimelineIcon
-                                name={event.icon}
-                                className="h-5 w-5 text-white/70"
-                              />
-                            </div>
-
-                            {/* Time and description */}
-                            <div className="flex-1">
-                              <div className="flex flex-wrap items-baseline gap-2">
-                                <span className="font-serif-main text-sm uppercase tracking-wider text-white/80">
-                                  {event.time}
-                                </span>
-                                <span className="font-serif-main text-base text-white">
-                                  {event.label}
-                                </span>
-                              </div>
-                              <p className="mt-1 font-serif-main text-sm text-white/70">
-                                {event.description}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Dresscode */}
-                    {"dresscode" in day && (
-                      <p className="mt-4 border-t border-white/20 pt-4 font-serif-main text-sm italic text-white/80">
-                        Dresscode: {day.dresscode}
-                      </p>
-                    )}
-
-                    {/* Children note */}
-                    {"children" in day && (
-                      <p className="mt-3 font-serif-main text-sm text-white/70">
-                        {day.children}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+            {/* Children note */}
+            <p className="mt-4 text-center font-serif-main text-sm leading-relaxed text-white/80 md:text-base">
+              {children}
+            </p>
+          </div>
         </div>
       </div>
     </section>

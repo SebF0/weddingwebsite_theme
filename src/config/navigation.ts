@@ -12,7 +12,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Our Day", href: "#our-special-day" },
   { label: "The Day", href: "#the-day" },
   { label: "RSVP", href: "#rsvp" },
-  { label: "Accommodation", href: "#accommodation" },
-  { label: "Travel", href: "#travel" },
+  { label: "Accommodation", href: "#where-to-stay" },
+  { label: "Travel", href: "#getting-to-events" },
   { label: "FAQ", href: "#faq" },
 ];

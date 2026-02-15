@@ -3,7 +3,11 @@ import DateVenue from "@/components/sections/DateVenue";
 import OurSpecialDay from "@/components/sections/OurSpecialDay";
 import TheDay from "@/components/sections/TheDay";
 import TheWeekend from "@/components/sections/TheWeekend";
-import SectionStub from "@/components/sections/SectionStub";
+import GettingToEvents from "@/components/sections/GettingToEvents";
+import WhereToStay from "@/components/sections/WhereToStay";
+import RSVP from "@/components/sections/RSVP";
+import ExploreRegion from "@/components/sections/ExploreRegion";
+import FAQ from "@/components/sections/FAQ";
 import { SITE_CONTENT } from "@/config/content";
 
 /**
@@ -18,30 +22,11 @@ export default function Home() {
       <OurSpecialDay />
       <TheDay />
       <TheWeekend />
-
-      {/* ── Stub sections — replace with full components when ready ── */}
-      <div className="divide-y divide-olive/10">
-        <SectionStub
-          id="rsvp"
-          heading={SITE_CONTENT.rsvp.heading}
-          description={SITE_CONTENT.rsvp.description}
-        />
-        <SectionStub
-          id="accommodation"
-          heading={SITE_CONTENT.accommodation.heading}
-          description={SITE_CONTENT.accommodation.description}
-        />
-        <SectionStub
-          id="travel"
-          heading={SITE_CONTENT.travel.heading}
-          description={SITE_CONTENT.travel.description}
-        />
-        <SectionStub
-          id="faq"
-          heading={SITE_CONTENT.faq.heading}
-          description={SITE_CONTENT.faq.description}
-        />
-      </div>
+      <GettingToEvents />
+      <WhereToStay />
+      <RSVP />
+      <ExploreRegion />
+      <FAQ />
     </>
   );
 }

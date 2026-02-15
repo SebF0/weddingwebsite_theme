@@ -52,29 +52,53 @@ export const SITE_CONTENT = {
     children: "No children on the wedding day please, unless babes in arms.",
   },
 
-  theWeekend: {
-    heading: "The Day After",
-    subheading:
-      "We're in France. We'll eat well, drink well and make the most of the surroundings.",
-    timeline: [
-      {
-        time: "11AM",
-        label: "requinquer",
-        description: "Pâtisseries, Bloody Marys and mimosas",
-        icon: "brunch",
-      },
-      {
-        time: "2PM",
-        label: "marché victor hugo feast",
-        description: "Rosé, music and lawn games",
-        icon: "party",
-      },
-    ],
-    dresscode:
-      "Beach chilled – bring swimmers, the pool is heated.",
-    children:
-      "Ideally no children. If you're in a bind, we'll arrange a childminder to help.",
-  },
+
+theWeekend: {
+  heading: "The weekend",
+  subheading:
+    "Three days in France: family, vows, food, music and a little recovery.",
+  days: [
+/*     {
+      name: "Friday",
+      title: "family night",
+      description:
+        "An intimate evening with immediate family. We’ll keep things quiet and save our energy for the celebrations to come. We look forward to seeing everyone on Saturday.",
+    },
+    {
+      name: "Saturday",
+      title: "the fête",
+      description:
+        "Join us for the ceremony where we’ll make things official, followed by a reception of eating, drinking and dancing into our first married evening together.",
+      dresscode: "Summer smart",
+      children:
+        "No children on the wedding day please, unless babes in arms.",
+    }, */
+    {
+      name: "Sunday",
+      title: "part deux",
+      description:
+        "We’re in France. We’ll eat well, drink well and make the most of the surroundings.",
+      timeline: [
+        {
+          time: "11AM",
+          label: "requinquer",
+          description: "Pâtisseries, Bloody Marys and mimosas",
+          icon: "brunch",
+        },
+        {
+          time: "2PM",
+          label: "marché victor hugo feast",
+          description: "Rosé, music and lawn games",
+          icon: "party",
+        },
+      ],
+      dresscode:
+        "Beach chilled – bring swimmers, the pool is heated.",
+      children:
+        "Ideally no children. If you’re in a bind, we’ll arrange a childminder to help.",
+    },
+  ],
+},
 
   gettingToEvents: {
     heading: "Getting to the events",
