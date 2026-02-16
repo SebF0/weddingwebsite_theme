@@ -16,11 +16,11 @@ export const SITE_CONTENT = {
     name1: "Louise",
     name2: "Sebastian",
     conjunction: "and",
-    tagline: "are getting married!",
+    tagline: "are getting married",
   },
 
   dateVenue: {
-    date: "September 26th 2026",
+    date: "Weekend of September 26th 2026",
     preposition: "at",
     venue: "Chateau du Pujolet, Vallesvilles",
   },
@@ -37,7 +37,7 @@ export const SITE_CONTENT = {
   },
 
   theDay: {
-    heading: "The Wedding Day",
+    heading: "Wedding Fête",
     subheading:
       "Our special day begins in the main lobby bar, meet there at 12:30pm",
     timeline: [
@@ -53,7 +53,7 @@ export const SITE_CONTENT = {
   },
 
   theWeekend: {
-    heading: "The Day After",
+    heading: "Part Deux",
     subheading:
       "We're in France. We'll eat well, drink well and make the most of the surroundings.",
     timeline: [

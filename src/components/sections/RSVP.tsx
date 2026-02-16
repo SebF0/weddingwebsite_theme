@@ -1,11 +1,15 @@
-import Image from "next/image";
 import { SITE_CONTENT } from "@/config/content";
 
-const RSVP_PHOTO_PATH = "/Assets/seb+lou_beachHug.jpeg";
+const LINE_COUNT = 8;
+const LINE_THICKNESS = "20px";
+const SPACE_SIZE = "60px";
+const LINE_THICKNESS_MOBILE = "10px"
+const SPACE_SIZE_MOBILE = "16px";
 
 /**
- * Two-column section: RSVP text on the left, framed photo on the right.
- * Stacks vertically on mobile with photo first.
+ * RSVP section with text on left and decorative vertical lines on right.
+ * Desktop: full-height vertical lines extending to screen edge.
+ * Mobile: full-width horizontal lines with alternating pattern.
  */
 export default function RSVP() {
   const { heading, description, items, closing } = SITE_CONTENT.rsvp;
@@ -13,16 +17,64 @@ export default function RSVP() {
   return (
     <section
       id="rsvp"
-      className="bg-cream py-20 md:py-28 lg:py-32"
+      className="relative bg-cream"
     >
-      <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16 md:px-10 lg:px-16">
-        {/* ── RSVP text ─────────────────────────────────── */}
-        <div className="order-2 flex flex-col items-center text-center md:order-1 md:items-start md:text-left">
-          <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-olive md:text-4xl">
+      {/* Desktop layout */}
+      <div className="hidden md:flex md:min-h-[600px] lg:min-h-[700px]">
+        {/* Text content */}
+        <div className="flex w-full max-w-2xl items-center py-28 pl-10 pr-16 lg:py-32 lg:pl-16 lg:pr-20">
+          <div className="flex flex-col items-start text-left">
+            <h2 className="font-serif-main text-4xl uppercase tracking-wedding text-olive lg:text-5xl">
+              {heading}
+            </h2>
+
+            <p className="mt-8 font-serif-main text-lg leading-relaxed text-olive/80">
+              {description}
+            </p>
+
+            <ul className="mt-8 space-y-2">
+              {items.map((item, i) => (
+                <li
+                  key={i}
+                  className="font-serif-main text-lg leading-relaxed text-olive/70"
+                >
+                  - {item}
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-10 font-serif-main text-lg italic leading-relaxed text-olive/80">
+              {closing}
+            </p>
+          </div>
+        </div>
+
+        {/* Vertical lines - full height, equally spaced to edge */}
+        <div 
+          className="absolute bottom-0 right-0 top-0 flex"
+          style={{ 
+            gap: SPACE_SIZE,
+          }}
+        >
+          {Array.from({ length: LINE_COUNT }).map((_, i) => (
+            <div
+              key={i}
+              className="bg-olive/60"
+              style={{ width: LINE_THICKNESS }}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile layout */}
+      <div className="flex flex-col md:hidden">
+        {/* Text content with padding */}
+        <div className="flex flex-col items-start px-6 py-20 text-left">
+          <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-olive">
             {heading}
           </h2>
 
-          <p className="mt-6 font-serif-main text-base leading-relaxed text-olive/80 md:text-lg">
+          <p className="mt-6 font-serif-main text-base leading-relaxed text-olive/80">
             {description}
           </p>
 
@@ -30,33 +82,32 @@ export default function RSVP() {
             {items.map((item, i) => (
               <li
                 key={i}
-                className="font-serif-main text-base leading-relaxed text-olive/70 md:text-lg"
+                className="font-serif-main text-base leading-relaxed text-olive/70"
               >
                 - {item}
               </li>
             ))}
           </ul>
 
-          <p className="mt-8 font-serif-main text-base italic leading-relaxed text-olive/80 md:text-lg">
+          <p className="mt-8 font-serif-main text-base italic leading-relaxed text-olive/80">
             {closing}
           </p>
         </div>
 
-        {/* ── Photo frame ─────────────────────────────────── */}
-        <div className="order-1 flex justify-center md:order-2">
-          <div className="border-2 border-olive/70 p-2">
-            <div className="border border-white/60 p-1">
-              <div className="relative aspect-[4/5] w-64 overflow-hidden bg-olive/80 md:w-72 lg:w-80">
-                <Image
-                  src={RSVP_PHOTO_PATH}
-                  alt="Seb and Lou"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 256px, 288px"
-                />
-              </div>
+        {/* Horizontal lines - full width, alternating with spaces, ending on space */}
+        <div className="flex flex-col">
+          {Array.from({ length: LINE_COUNT }).map((_, i) => (
+            <div key={i}>
+              <div 
+                className="w-full bg-olive/60"
+                style={{ height: LINE_THICKNESS_MOBILE }}
+              />
+              <div 
+                className="w-full bg-cream"
+                style={{ height: SPACE_SIZE_MOBILE }}
+              />
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

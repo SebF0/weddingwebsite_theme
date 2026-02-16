@@ -18,8 +18,8 @@ export default function DateVenue() {
       <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16 md:px-10 lg:px-16">
         {/* ── Photo frame ─────────────────────────────────── */}
         <div className="flex justify-center">
-          <div className="border-2 border-olive/70 p-2">
-            <div className="border border-white/60 p-1">
+          <div className="border-3 border-olive/70 p-3">
+            <div className="border-3 border-olive/70 p-6">
               <div className="relative aspect-[4/5] w-64 overflow-hidden bg-olive/80 md:w-72 lg:w-80">
                 <Image
                   src={COUPLE_PHOTO_PATH}

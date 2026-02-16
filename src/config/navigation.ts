@@ -9,10 +9,10 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "Our Day", href: "#our-special-day" },
-  { label: "The Day", href: "#the-day" },
+  { label: "The Fête", href: "#the-day" },
+  { label: "Part Deux", href: "#the-weekend" },
   { label: "RSVP", href: "#rsvp" },
-  { label: "Accommodation", href: "#where-to-stay" },
+/*   { label: "Accommodation", href: "#where-to-stay" },
   { label: "Travel", href: "#getting-to-events" },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "#faq" }, */
 ];
