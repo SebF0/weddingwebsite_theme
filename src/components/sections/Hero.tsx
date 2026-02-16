@@ -73,13 +73,13 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center text-center">
         {/* Couple names — large serif + script accent */}
         <h1 className="flex flex-col items-center leading-none">
-          <span className="font-serif-main  text-6xl uppercase tracking-wedding text-cream md:text-7xl lg:text-8xl">
+          <span className="font-serif-main  text-5xl uppercase tracking-wedding text-cream md:text-7xl lg:text-8xl">
             {name1}
           </span>
           <span className="font-script -my-2 text-4xl text-cream md:-my-4 md:text-5xl lg:text-6xl">
             {conjunction}
           </span>
-          <span className="font-serif-main text-6xl uppercase tracking-wedding text-cream md:text-7xl lg:text-8xl">
+          <span className="font-serif-main text-5xl uppercase tracking-wedding text-cream md:text-7xl lg:text-8xl">
             {name2}
           </span>
         </h1>
