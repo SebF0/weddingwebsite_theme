@@ -48,8 +48,8 @@ export const SITE_CONTENT = {
       { time: "11PM", label: "party", location: "Reception Room", icon: "party" },
       { time: "2AM", label: "hometime", location: "Reception Room", icon: "hometime" },
     ],
-    dresscode: "Summer smart",
-    children: "No children on the wedding day please, unless babes in arms.",
+    dresscode: "Dresscode: Summer smart",
+    children: "Children: No children on the wedding day please, unless babes in arms.",
   },
 
   theWeekend: {

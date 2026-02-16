@@ -6,7 +6,7 @@ import TimelineIcon from "@/components/icons/TimelineIcon";
  * Icons are simple SVGs; times and labels come from config/content.ts.
  */
 export default function TheDay() {
-  const { heading, subheading, timeline } = SITE_CONTENT.theDay;
+  const { heading, subheading, timeline, dresscode, children } = SITE_CONTENT.theDay;
 
   return (
     <section
@@ -25,7 +25,7 @@ export default function TheDay() {
         </p>
 
         {/* Timeline */}
-        <div className="mt-14 flex flex-wrap items-start justify-center gap-8 md:gap-12 lg:gap-14">
+        <div className="mt-14 mb-14 flex flex-wrap items-start justify-center gap-8 md:gap-12 lg:gap-14">
           {timeline.map((item) => (
             <div
               key={item.label}
@@ -50,7 +50,16 @@ export default function TheDay() {
               </p>
             </div>
           ))}
+                   
         </div>
+ {/* Subheading in script */}
+ <p className="mx-auto mt-4 max-w-lg font-script text-lg text-olive/70 md:text-xl">
+          {dresscode}
+        </p>
+                {/* Subheading in script */}
+                <p className="mx-auto mt-4 max-w-lg font-script text-lg text-olive/70 md:text-xl">
+          {children}
+        </p>
       </div>
     </section>
   );

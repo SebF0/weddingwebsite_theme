@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Parisienne, Great_Vibes } from "next/font/google";
+import { Cormorant_Garamond, Great_Vibes } from "next/font/google";
 
 /** Primary serif for headings, body text, navigation, and buttons */
 export const cormorantGaramond = Cormorant_Garamond({
@@ -8,13 +8,6 @@ export const cormorantGaramond = Cormorant_Garamond({
   display: "swap",
 });
 
-/** Decorative script for names, signatures, and accents */
-export const parisienne = Parisienne({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-parisienne",
-  display: "swap",
-});
 
 /** Decorative script for names, signatures, and accents */
 export const greatVibes = Great_Vibes({
