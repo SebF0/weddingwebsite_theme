@@ -75,7 +75,7 @@ Add an entry to the `NAV_ITEMS` array in **`src/config/navigation.ts`**. The `hr
 | Green overlay     | `bg-olive-light`        | `#5C6B52` |
 | Sage accent       | `text-sage`             | `#8A9A7B` |
 | Serif font        | `font-serif-main`       | Cormorant Garamond |
-| Script font       | `font-script`           | Parisienne |
+| Script font       | `font-script`           | Great Vibes |
 | Letter spacing    | `tracking-wedding`      | `0.2em`   |
 | Wide spacing      | `tracking-wedding-wide` | `0.35em`  |
 

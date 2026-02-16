@@ -18,7 +18,7 @@ export default function Navbar() {
         {/* Couple initials / brand mark */}
         <a
           href="#"
-          className="font-script text-xl text-olive"
+          className="font-script text-xl text-transparent"
         >
           {name1} & {name2}
         </a>
