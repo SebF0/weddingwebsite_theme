@@ -19,7 +19,7 @@ src/
 │   └── theme.ts             ← Color palette + spacing constants
 │
 ├── lib/
-│   └── fonts.ts             ← Google Font loading (Cormorant Garamond, Parisienne)
+│   └── fonts.ts             ← Google Font loading (Cormorant Garamond, Great Vibes)
 │
 └── components/
     ├── layout/

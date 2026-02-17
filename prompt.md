@@ -13,10 +13,10 @@ Typography (mandatory)
 - Use next/font/google.
 - Use:
     - "Cormorant Garamond" for all body text, headings, navigation, and buttons.
-    - "Parisienne" for script accents (names in hero, decorative headings, signature-style text).
+    - "Great Vibes" for script accents (names in hero, decorative headings, signature-style text).
 - Configure proper font weights:
     - Cormorant Garamond: 300, 400, 500, 600, 700
-    - Parisienne: 400
+    - Great Vibes: 400
 - Apply fonts via Tailwind theme extension so they are reusable classes (e.g. font-serif-main, font-script).
 
 

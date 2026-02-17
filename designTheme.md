@@ -32,7 +32,7 @@ An elegant, romantic wedding website with a warm, sophisticated aesthetic. The d
    - Weights: 300 (light), 400 (regular), 500 (medium), 600 (semibold), 700 (bold)
    - Character: Elegant serif with classical proportions
 
-2. **Parisienne** (`font-script`)
+2. **Great Vibes** (`font-script`)
    - Usage: Decorative accents, couple names, signatures, ornamental headings
    - Weight: 400
    - Character: Romantic script with flowing curves

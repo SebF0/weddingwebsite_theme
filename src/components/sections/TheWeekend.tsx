@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SITE_CONTENT } from "@/config/content";
 import TimelineIcon from "@/components/icons/TimelineIcon";
 
-const THE_WEEKEND_IMAGE_PATH = "/Assets/Seb+Lou_CoolBoat.jpeg";
+const THE_WEEKEND_IMAGE_PATH = "/Assets/basketShot.jpeg";
 
 /**
  * Dark-themed section for Sunday events with vertical timeline.

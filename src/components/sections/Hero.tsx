@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SITE_CONTENT } from "@/config/content";
 
 const HERO_IMAGE_PATH = "/Assets/chateau-swimmingPool.png";
+// const HERO_IMAGE_PATH = "/Assets/chateau-greenHouse.jpg";
 // const HERO_IMAGE_PATH = "/Assets/WaterColourBackground2.png";
 const SUNFLOWERS_IMAGE_PATH = "/Assets/Sunflowers.png";
 const PLANTS_IMAGE_PATH = "/Assets/Plants.png";
