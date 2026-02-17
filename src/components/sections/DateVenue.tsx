@@ -28,6 +28,8 @@ export default function DateVenue() {
                   className="object-cover"
                   sizes="(max-width: 768px) 256px, 288px"
                 />
+                {/* Silhouette overlay — darkens the photo for a moody, editorial feel */}
+                <div className="absolute inset-0 bg-olive-light/50" />
               </div>
             </div>
           </div>

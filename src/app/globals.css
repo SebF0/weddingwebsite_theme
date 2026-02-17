@@ -13,6 +13,7 @@
   --color-olive: #3C4A3E;
   --color-olive-light: #5C6B52;
   --color-sage: #8A9A7B;
+  --color-silhouette: #1a2018;
 
   /* ── Typography ─────────────────────────────────────────── */
   --font-serif-main: var(--font-cormorant-garamond), "Georgia", serif;
