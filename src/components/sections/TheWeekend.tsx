@@ -1,12 +1,11 @@
-import Image from "next/image";
 import { SITE_CONTENT } from "@/config/content";
 import TimelineIcon from "@/components/icons/TimelineIcon";
 
-const THE_WEEKEND_IMAGE_PATH = "/Assets/basketShot.jpeg";
+const THE_WEEKEND_VIDEO_PATH = "/Assets/SriLanka.mov";
 
 /**
  * Dark-themed section for Sunday events with vertical timeline.
- * Simple stacked layout with background image and overlay.
+ * Simple stacked layout with background video and overlay.
  */
 export default function TheWeekend() {
   const { heading, subheading, timeline, dresscode, children } = SITE_CONTENT.theWeekend;
@@ -16,17 +15,18 @@ export default function TheWeekend() {
       id="the-weekend"
       className="relative overflow-hidden py-24 md:py-32 lg:py-40"
     >
-      {/* Background image */}
+      {/* Background video */}
       <div
         className="absolute inset-0 bg-olive-light"
         aria-hidden="true"
       >
-        <Image
-          src={THE_WEEKEND_IMAGE_PATH}
-          alt=""
-          fill
-          className="object-cover"
-          sizes="100vw"
+        <video
+          src={THE_WEEKEND_VIDEO_PATH}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="h-full w-full object-cover"
         />
       </div>
 
