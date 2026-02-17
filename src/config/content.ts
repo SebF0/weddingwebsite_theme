@@ -26,7 +26,7 @@ export const SITE_CONTENT = {
   },
 
   ourSpecialDay: {
-    heading: "Come party with us!",
+    heading: "Dear Friends and Family",
     paragraphs: [
       "We are so excited to celebrate this special moment in our lives with our closest family and friends. Your love and support mean the world to us, and we can't wait to share this unforgettable day with you.",
       "As we count down to our big day, we've created this website to keep you updated on all the details.",

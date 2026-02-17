@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SITE_CONTENT } from "@/config/content";
 
-const OUR_SPECIAL_DAY_IMAGE_PATH = "/Assets/seb+lou_bubble.jpeg";
+const OUR_SPECIAL_DAY_IMAGE_PATH = "/Assets/proposal_sebRight2.jpeg";
 
 /**
  * Full-width section with a dark sage-green overlay on a background image.
@@ -32,7 +32,7 @@ export default function OurSpecialDay() {
 
       {/* Dark overlay for text readability */}
       <div
-        className="absolute inset-0 bg-olive-light/80"
+        className="absolute inset-0 bg-olive-light/60"
         aria-hidden="true"
       />
 
