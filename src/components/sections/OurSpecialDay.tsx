@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SITE_CONTENT } from "@/config/content";
 
-const OUR_SPECIAL_DAY_IMAGE_PATH = "/Assets/proposal_sebRight2.jpeg";
+const OUR_SPECIAL_DAY_IMAGE_PATH = "/Assets/proposalBest.jpeg";
 
 /**
  * Full-width section with a dark sage-green overlay on a background image.
