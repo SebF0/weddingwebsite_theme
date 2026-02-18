@@ -222,4 +222,12 @@ export const SITE_CONTENT = {
       },
     ],
   },
+
+  askJeeves: {
+    heading: "Ask Jeeves anything",
+    subheading: "Ask a quick question and get an instant answer.",
+    placeholder: "Type your question…",
+    buttonLabel: "Ask",
+    note: "Questions and answers are stored.",
+  },
 } as const;

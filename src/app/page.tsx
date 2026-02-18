@@ -7,8 +7,8 @@ import GettingToEvents from "@/components/sections/GettingToEvents";
 import WhereToStay from "@/components/sections/WhereToStay";
 import RSVP from "@/components/sections/RSVP";
 import ExploreRegion from "@/components/sections/ExploreRegion";
+import AskJeeves from "@/components/sections/AskJeeves";
 import FAQ from "@/components/sections/FAQ";
-import { SITE_CONTENT } from "@/config/content";
 
 /**
  * Home page — assembles all sections in order.
@@ -26,6 +26,7 @@ export default function Home() {
       <WhereToStay />
       <RSVP />
       <ExploreRegion />
+      <AskJeeves />
       <FAQ />
     </>
   );
