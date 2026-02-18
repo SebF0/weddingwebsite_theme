@@ -1,7 +1,8 @@
 import { SITE_CONTENT } from "@/config/content";
 import TimelineIcon from "@/components/icons/TimelineIcon";
 
-const THE_WEEKEND_VIDEO_PATH = "/Assets/SriLankaCrop2.mov";
+const THE_WEEKEND_VIDEO_DESKTOP = "/Assets/SriLankaCrop2.mov";
+const THE_WEEKEND_VIDEO_MOBILE = "/Assets/SriLankaMobileVert.mov";
 
 /**
  * Dark-themed section for Sunday events with vertical timeline.
@@ -21,12 +22,20 @@ export default function TheWeekend() {
         aria-hidden="true"
       >
         <video
-          src={THE_WEEKEND_VIDEO_PATH}
+          src={THE_WEEKEND_VIDEO_DESKTOP}
           autoPlay
           muted
           loop
           playsInline
-          className="h-full w-full object-cover"
+          className="hidden h-full w-full object-cover md:block"
+        />
+        <video
+          src={THE_WEEKEND_VIDEO_MOBILE}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="block h-full w-full object-cover md:hidden"
         />
       </div>
 
