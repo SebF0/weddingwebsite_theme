@@ -1,7 +1,7 @@
 import { SITE_CONTENT } from "@/config/content";
 import TimelineIcon from "@/components/icons/TimelineIcon";
 
-const THE_WEEKEND_VIDEO_PATH = "/Assets/SriLanka.mov";
+const THE_WEEKEND_VIDEO_PATH = "/Assets/SriLankaCrop2.mov";
 
 /**
  * Dark-themed section for Sunday events with vertical timeline.

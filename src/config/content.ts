@@ -45,8 +45,8 @@ export const SITE_CONTENT = {
     timeline: [
       { time: "3PM", label: "ceremony", location: "Église Saint-Pierre de Quint-Fonsegrives", icon: "rings" },
       { time: "5PM", label: "drinks", location: "Serre", icon: "champagne" },
-      { time: "7PM", label: "dinner", location: "Grange", icon: "cake" },
-      { time: "10PM", label: "cake cutting", location: "Reception Room", icon: "dinner" },
+      { time: "7PM", label: "dinner", location: "Grange", icon: "dinner" },
+      { time: "10PM", label: "cake cutting", location: "Reception Room", icon: "cake" },
       { time: "11PM", label: "party", location: "Reception Room", icon: "party" },
       { time: "2AM", label: "hometime", location: "Reception Room", icon: "hometime" },
     ],
@@ -67,9 +67,9 @@ export const SITE_CONTENT = {
       },
       {
         time: "2PM",
-        label: "marché victor hugo feast",
+        label: "The best of Marché Victor Hugo",
         description: "Rosé, music and lawn games",
-        icon: "party",
+        icon: "dinner",
       },
     ],
     dresscode:
