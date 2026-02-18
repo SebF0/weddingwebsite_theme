@@ -1,7 +1,7 @@
 import { SITE_CONTENT } from "@/config/content";
 import TimelineIcon from "@/components/icons/TimelineIcon";
 
-const THE_WEEKEND_VIDEO_DESKTOP = "/Assets/SriLankaCrop2.mov";
+const THE_WEEKEND_VIDEO_DESKTOP = "/Assets/SriLankaDesktop.mov";
 const THE_WEEKEND_VIDEO_MOBILE = "/Assets/SriLankaMobileVert.mov";
 
 /**
@@ -41,13 +41,13 @@ export default function TheWeekend() {
 
       {/* Dark overlay for text readability */}
       <div
-        className="absolute inset-0 bg-olive-light/80"
+        className="absolute inset-0 bg-olive-light/60"
         aria-hidden="true"
       />
 
       {/* Content */}
       <div className="relative z-10 mx-auto px-6 text-center md:px-10">
-        <div className="mx-auto w-full max-w-3xl bg-olive/60 px-6 py-8 md:px-10 md:py-12 lg:px-16 lg:py-16">
+        <div className="mx-auto w-full max-w-3xl bg-olive/20 px-6 py-8 md:px-10 md:py-12 lg:px-16 lg:py-16">
           <div className="mx-auto max-w-2xl">
             {/* Heading */}
             <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-white md:text-4xl">
