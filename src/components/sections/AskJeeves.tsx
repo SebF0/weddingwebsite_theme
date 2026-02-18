@@ -64,21 +64,20 @@ export default function AskJeeves() {
 
   return (
     <section id="ask-jeeves" className="bg-cream py-16 md:py-24 lg:py-32">
-      <div className="mx-auto max-w-3xl px-6 md:px-10">
-        <h2 className="font-serif-main text-3xl normal-case tracking-wedding text-olive md:text-4xl lg:text-5xl">
-          {heading}{""}
-          <span className="font-script normal-case tracking-wedding text-olive text-5xl md:text-6xl lg:text-7xl">
-            {heading2}
-          </span>
-        </h2>
-        <p className="mt-4 font-serif-main text-lg leading-relaxed text-olive/70">
-          {subheading}
-        </p>
+      <div className="mx-auto px-10 md:px-16 lg:px-20">
+        <div className="w-full border-4 border-olive/70 p-10 md:p-20">
+          <h2 className="font-serif-main text-3xl normal-case tracking-wedding text-olive md:text-4xl lg:text-5xl">
+            {heading}{""}
+            <span className="font-script normal-case tracking-wedding text-olive text-5xl md:text-6xl lg:text-7xl">
+              {heading2}
+            </span>
+          </h2>
+          <p className="mt-4 font-serif-main text-lg leading-relaxed text-olive/70">
+            {subheading}
+          </p>
 
-        {/* Widget container with green border */}
-        <div className="mt-10 border border-olive p-6 md:p-8">
           {/* Input row */}
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-start">
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-start">
             <div className="flex-1">
               <input
                 type="text"
@@ -104,28 +103,24 @@ export default function AskJeeves() {
             </button>
           </div>
 
-          {/* Validation error */}
           {validationError && (
             <p className="mt-3 font-serif-main text-sm text-olive/70">
               {validationError}
             </p>
           )}
 
-          {/* Loading */}
           {loading && (
             <p className="mt-4 font-serif-main text-sm italic text-olive/60">
               Thinking…
             </p>
           )}
 
-          {/* Fetch error */}
           {fetchError && (
             <p className="mt-4 font-serif-main text-sm text-olive/70">
               {fetchError}
             </p>
           )}
 
-          {/* Answer */}
           {answer && !loading && (
             <div className="mt-6 border-t border-olive/20 pt-6">
               <p className="font-serif-main text-base leading-relaxed text-olive">
@@ -134,7 +129,6 @@ export default function AskJeeves() {
             </div>
           )}
 
-          {/* Note */}
           <p className="mt-6 font-serif-main text-xs text-olive/40">
             {note}
           </p>
