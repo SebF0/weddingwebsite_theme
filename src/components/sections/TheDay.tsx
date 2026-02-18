@@ -11,7 +11,7 @@ export default function TheDay() {
   return (
     <section
       id="the-day"
-      className="bg-cream py-20 md:py-28 lg:py-32"
+      className="bg-cream py-16 md:py-24 lg:py-30"
     >
       <div className="mx-auto max-w-5xl px-6 text-center md:px-10 lg:px-16">
         {/* Section heading */}
@@ -20,7 +20,7 @@ export default function TheDay() {
         </h2>
 
         {/* Subheading in script */}
-        <p className="mx-auto mt-4 max-w-lg font-script text-lg text-olive/70 md:text-xl">
+        <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
           {subheading}
         </p>
 
@@ -40,12 +40,12 @@ export default function TheDay() {
               </div>
 
               {/* Time */}
-              <p className="mt-3 font-serif-main text-xs uppercase tracking-wider text-olive/60 md:text-sm">
+              <p className="mt-3 font-serif-main text-sm uppercase tracking-wider text-olive/60 md:text-base">
                 {item.time}
               </p>
 
               {/* Label */}
-              <p className="mt-1 font-serif-main text-xs text-olive md:text-sm">
+              <p className="mt-1 font-serif-main text-sm text-olive md:text-base">
                 {item.label}
               </p>
             </div>
@@ -53,11 +53,11 @@ export default function TheDay() {
                    
         </div>
  {/* Subheading in script */}
- <p className="mx-auto mt-4 max-w-lg font-script text-lg text-olive/70 md:text-xl">
+ <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
           {dresscode}
         </p>
                 {/* Subheading in script */}
-                <p className="mx-auto mt-4 max-w-lg font-script text-lg text-olive/70 md:text-xl">
+                <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
           {children}
         </p>
       </div>

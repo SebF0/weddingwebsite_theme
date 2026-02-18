@@ -14,7 +14,7 @@ export default function TheWeekend() {
   return (
     <section
       id="the-weekend"
-      className="relative overflow-hidden py-24 md:py-32 lg:py-40"
+      className="relative overflow-hidden py-16 md:py-24 lg:py-30"
     >
       {/* Background video */}
       <div
@@ -41,13 +41,13 @@ export default function TheWeekend() {
 
       {/* Dark overlay for text readability */}
       <div
-        className="absolute inset-0 bg-olive-light/60"
+        className="absolute inset-0 bg-olive-light/30"
         aria-hidden="true"
       />
 
       {/* Content */}
       <div className="relative z-10 mx-auto px-6 text-center md:px-10">
-        <div className="mx-auto w-full max-w-3xl bg-olive/20 px-6 py-8 md:px-10 md:py-12 lg:px-16 lg:py-16">
+        <div className="mx-auto w-full max-w-3xl bg-olive/30 px-6 py-8 md:px-10 md:py-12 lg:px-16 lg:py-16">
           <div className="mx-auto max-w-2xl">
             {/* Heading */}
             <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-white md:text-4xl">
@@ -55,12 +55,12 @@ export default function TheWeekend() {
             </h2>
 
             {/* Subheading */}
-            <p className="mx-auto mt-4 max-w-lg font-script text-lg text-white/90 md:text-xl">
+            <p className="mx-auto mt-4 max-w-lg font-script text-xl text-white/90 md:text-2xl">
               {subheading}
             </p>
 
             {/* Timeline */}
-            <div className="mt-10 space-y-6 text-left md:mt-12">
+            <div className="mt-5 space-y-6 text-left md:mt-6">
               {timeline.map((event) => (
                 <div
                   key={event.label}
@@ -93,12 +93,12 @@ export default function TheWeekend() {
             </div>
 
             {/* Dresscode */}
-            <p className="mt-8 border-t border-white/20 pt-6 text-center font-serif-main text-sm text-white/90 md:text-base">
+            <p className="mt-8 border-t border-white/20 pt-6 text-center font-script text-xl text-white/90 md:text-2xl">
               Dresscode: {dresscode}
             </p>
 
             {/* Children note */}
-            <p className="mt-4 text-center font-serif-main text-sm leading-relaxed text-white/90 md:text-base">
+            <p className="mt-4 text-center font-script text-xl leading-relaxed text-white/90 md:text-2xl">
               {children}
             </p>
           </div>

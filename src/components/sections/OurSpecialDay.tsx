@@ -14,7 +14,7 @@ export default function OurSpecialDay() {
   return (
     <section
       id="our-special-day"
-      className="relative overflow-hidden py-24 md:py-32 lg:py-40"
+      className="relative overflow-hidden py-16 md:py-24 lg:py-30"
     >
       {/* Background image */}
       <div
@@ -42,7 +42,8 @@ export default function OurSpecialDay() {
         <div className="mx-auto w-full max-w-4xl bg-olive/60 px-6 py-8 md:px-10 md:py-12 lg:px-16 lg:py-16">
           <div className="mx-auto max-w-2xl">
             {/* Script heading */}
-            <h2 className="font-script text-4xl text-white md:text-5xl lg:text-6xl">
+            {/* <h2 className="font-script text-4xl text-white md:text-5xl lg:text-6xl"> */}
+            <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-white md:text-4xl">
               {heading}
             </h2>
 

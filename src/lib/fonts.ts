@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Great_Vibes, Alex_Brush, Allura } from "next/font/google";
+import { Cormorant_Garamond, Great_Vibes, Alex_Brush, Allura, Carattere } from "next/font/google";
 
 /** Primary serif for headings, body text, navigation, and buttons */
 export const cormorantGaramond = Cormorant_Garamond({
@@ -30,5 +30,14 @@ export const allura = Allura({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-allura",
+  display: "swap",
+});
+
+
+/** Decorative script Variation 3 for names, signatures, and accents */
+export const carattere = Carattere({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-carattere",
   display: "swap",
 });

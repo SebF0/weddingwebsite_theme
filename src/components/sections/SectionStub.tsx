@@ -14,7 +14,7 @@ export default function SectionStub({ id, heading, description }: SectionStubPro
   return (
     <section
       id={id}
-      className="bg-cream py-20 md:py-28 lg:py-32"
+      className="bg-cream py-16 md:py-24 lg:py-30"
     >
       <div className="mx-auto max-w-4xl px-6 text-center md:px-10 lg:px-16">
         <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-olive md:text-4xl">

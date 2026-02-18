@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { cormorantGaramond, greatVibes, alexBrush, allura } from "@/lib/fonts";
+import { cormorantGaramond, greatVibes, alexBrush, allura, carattere } from "@/lib/fonts";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { SITE_CONTENT } from "@/config/content";
@@ -22,8 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantGaramond.variable} 
-        ${greatVibes.variable} 
+        className={`${cormorantGaramond.variable}  
+        ${carattere.variable} 
         antialiased`}
       >
         <Navbar />

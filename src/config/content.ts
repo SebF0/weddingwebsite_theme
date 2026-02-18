@@ -28,14 +28,13 @@ export const SITE_CONTENT = {
   ourSpecialDay: {
     heading: "The French Chapter",
     paragraphs: [
-      "France has quietly framed many of our biggest life decisions, so it felt only natural to continue that story and host our wedding there.",
-      "Some of you may have, very vocally, noted the gap between the proposal in 2023 and us finally setting a date. Unlike other milestones, such as securing a mortgage or coming engaged, planning a wedding did not require urgent action in response to worsening weather or rising avalanche risk. More significantly, our focus shifted to something far more important: welcoming our baby girl, Amélie, in September 2025.",
-      "Toulouse looked after Seb for five years, leaving him with great friends, even greater memories, and a deep, arguably unhealthy, attachment to Victor Hugo Market.",
-      "Since, Seb was surprisingly accepted as a French national, with the sole objective of accessing to the “EU” airport queue. Despite our hopes, this new citizenship has done nothing to improve his French, which had reached an all-time low, a fact only fully revealed after we had paid the deposit.",
-      "We are so excited to host this next French chapter and celebrate with you in Toulouse."
+      "France has quietly framed many of our biggest life decisions, securing our first home and becoming engaged, so it felt only natural to continue our story there and host our wedding there.",
+      "Toulouse itself was Seb's home for years, leaving him with great friends, even greater memories, and a deep, arguably unhealthy, attachment to Victor Hugo Market.",
+      "Our choice was cemented when Seb was unexpectedly accepted as a French national, but despite our best hopes, this new citizenship has done nothing to improve his French, which had reached an all-time low.",
+      "We are so excited to create our newest memory with you all in Toulouse."
     ],
     closing: "With love,",
-    signature: "Lou & Seb",
+    signature: "Louise & Sebastian",
   },
 
   theDay: {

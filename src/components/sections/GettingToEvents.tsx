@@ -11,7 +11,7 @@ export default function GettingToEvents() {
   return (
     <section
       id="getting-to-events"
-      className="bg-cream py-20 md:py-28 lg:py-32"
+      className="bg-cream py-16 md:py-24 lg:py-30"
     >
       <div className="mx-auto max-w-5xl px-6 md:px-10 lg:px-16">
         {/* Section heading */}

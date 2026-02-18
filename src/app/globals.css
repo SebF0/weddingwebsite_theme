@@ -17,9 +17,10 @@
 
   /* ── Typography ─────────────────────────────────────────── */
   --font-serif-main: var(--font-cormorant-garamond), "Georgia", serif;
-  --font-script: var(--font-great-vibes), "Great Vibes", cursive;
+  /* --font-script: var(--font-great-vibes), "Great Vibes", cursive; */
   /* --font-script: var(--font-alex-brush), "Alex Brush", cursive; */
   /* --font-script: var(--font-allura), "Allura", cursive; */
+  --font-script: var(--font-carattere), "Carattere", cursive;
 }
 
 /* ── Base styles ───────────────────────────────────────────── */

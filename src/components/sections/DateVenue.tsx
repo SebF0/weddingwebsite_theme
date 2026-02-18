@@ -13,7 +13,7 @@ export default function DateVenue() {
   return (
     <section
       id="date-venue"
-      className="bg-cream py-20 md:py-28 lg:py-32"
+      className="bg-cream py-16 md:py-24 lg:py-30"
     >
       <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 px-6 md:grid-cols-2 md:gap-16 md:px-10 lg:px-16">
         {/* ── Photo frame ─────────────────────────────────── */}
