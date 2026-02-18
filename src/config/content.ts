@@ -224,10 +224,11 @@ export const SITE_CONTENT = {
   },
 
   askJeeves: {
-    heading: "Ask Jeeves anything",
-    subheading: "Ask a quick question and get an instant answer.",
+    heading: "Ask... Seb",
+    heading2: "G&T",
+    subheading: "Ask silly questions, and get silly answers.",
     placeholder: "Type your question…",
     buttonLabel: "Ask",
-    note: "Questions and answers are stored.",
+    note: "Answers are AI generated therefore must be followed verbatim.",
   },
 } as const;
