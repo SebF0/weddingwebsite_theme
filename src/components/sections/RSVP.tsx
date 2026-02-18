@@ -22,7 +22,7 @@ export default function RSVP() {
       {/* Desktop layout */}
       <div className="hidden md:flex md:min-h-[600px] lg:min-h-[700px]">
         {/* Text content */}
-        <div className="flex w-full max-w-2xl items-center py-28 pl-10 pr-16 lg:py-32 lg:pl-16 lg:pr-20">
+        <div className="flex w-full max-w-2xl items-center py-28 pl-10 pr-16 lg:py-32 lg:pl-24 lg:pr-20">
           <div className="flex flex-col items-start text-left">
             <h2 className="font-serif-main text-4xl uppercase tracking-wedding text-olive lg:text-5xl">
               {heading}
@@ -59,7 +59,7 @@ export default function RSVP() {
           {Array.from({ length: LINE_COUNT }).map((_, i) => (
             <div
               key={i}
-              className="bg-olive/60"
+              className="bg-olive/80"
               style={{ width: LINE_THICKNESS }}
             />
           ))}

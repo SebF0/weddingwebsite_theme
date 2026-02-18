@@ -56,18 +56,18 @@ export const SITE_CONTENT = {
   theWeekend: {
     heading: "Part Deux",
     subheading:
-      "We're in France. We'll eat well, drink well and make the most of the surroundings.",
+      "We'd love to see as many of you as we can for a more relaxed day around the pool to debrief and catch up.",
     timeline: [
       {
         time: "11AM",
-        label: "requinquer",
-        description: "Pâtisseries, Bloody Marys and mimosas",
+        label: "Requinquer",
+        description: "Pâtisseries, Bloody Marys and Mimosas",
         icon: "brunch",
       },
       {
         time: "2PM",
-        label: "The best of Marché Victor Hugo",
-        description: "Rosé, music and lawn games",
+        label: "The Best of the Marché",
+        description: "Food, drinks, music and lawn games",
         icon: "dinner",
       },
     ],
@@ -163,7 +163,7 @@ export const SITE_CONTENT = {
     heading: "FAQ",
     questions: [
       {
-        question: "What does the dresscode mean?",
+        question: "More on the Dresscode",
         answer: [
           {
             type: "subtitle",
@@ -171,7 +171,7 @@ export const SITE_CONTENT = {
           },
           {
             type: "text",
-            content: "Chinos, suits, dresses are the go. Feel good and look good.",
+            content: "Suits, chinos, dresses are the go. Please come looking and feeling good.",
           },
           {
             type: "subtitle",
@@ -179,7 +179,7 @@ export const SITE_CONTENT = {
           },
           {
             type: "text",
-            content: "Party shirts are encouraged. Shorts and sandals are welcome. Boaties work 100% of the time, every time.",
+            content: "Party shirts are encouraged. Shorts and sandals are welcome. Needless to say, Boaties work every time.",
           },
         ],
       },
@@ -188,7 +188,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "See the detailed map below about where to direct Ubers, Taxis or Drivers.",
+            content: "This is one thing the venue was fussy about so please help by parking in the right place. See the detailed map below about where to direct Ubers, Taxis or Drivers.",
           },
           {
             type: "image",
