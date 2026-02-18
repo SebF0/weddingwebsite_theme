@@ -19,7 +19,7 @@ src/
 │   └── theme.ts             ← Color palette + spacing constants
 │
 ├── lib/
-│   └── fonts.ts             ← Google Font loading (Cormorant Garamond, Great Vibes)
+│   └── fonts.ts             ← Google Font loading (Cormorant Garamond, Carattere)
 │
 └── components/
     ├── layout/
@@ -31,6 +31,12 @@ src/
     │   ├── DateVenue.tsx     ← Photo frame + date/venue text
     │   ├── OurSpecialDay.tsx ← Green overlay message section
     │   ├── TheDay.tsx        ← Timeline with icons
+    │   ├── TheWeekend.tsx    ← Part Deux timeline
+    │   ├── GettingToEvents.tsx ← Travel / getting there
+    │   ├── WhereToStay.tsx   ← Accommodation
+    │   ├── RSVP.tsx          ← RSVP form section
+    │   ├── ExploreRegion.tsx ← Explore the region
+    │   ├── FAQ.tsx           ← FAQ accordion
     │   └── SectionStub.tsx   ← Reusable placeholder for future sections
     │
     └── icons/
@@ -75,7 +81,7 @@ Add an entry to the `NAV_ITEMS` array in **`src/config/navigation.ts`**. The `hr
 | Green overlay     | `bg-olive-light`        | `#5C6B52` |
 | Sage accent       | `text-sage`             | `#8A9A7B` |
 | Serif font        | `font-serif-main`       | Cormorant Garamond |
-| Script font       | `font-script`           | Great Vibes |
+| Script font       | `font-script`           | Carattere   |
 | Letter spacing    | `tracking-wedding`      | `0.2em`   |
 | Wide spacing      | `tracking-wedding-wide` | `0.35em`  |
 
@@ -83,13 +89,15 @@ Add an entry to the `NAV_ITEMS` array in **`src/config/navigation.ts`**. The `hr
 
 ## Section IDs (for anchors)
 
-| Section        | ID                  |
-|----------------|---------------------|
-| Hero           | `#hero`             |
-| Date & Venue   | `#date-venue`       |
-| Our Special Day| `#our-special-day`  |
-| The Day        | `#the-day`          |
-| RSVP           | `#rsvp`             |
-| Accommodation  | `#accommodation`    |
-| Travel         | `#travel`           |
-| FAQ            | `#faq`              |
+| Section           | ID                     |
+|-------------------|------------------------|
+| Hero              | `#hero`                |
+| Date & Venue      | `#date-venue`          |
+| Our Special Day   | `#our-special-day`     |
+| The Day           | `#the-day`             |
+| The Weekend       | `#the-weekend`         |
+| Getting to Events | `#getting-to-events`   |
+| Where to Stay     | `#where-to-stay`       |
+| RSVP              | `#rsvp`                |
+| Explore Region    | `#explore-region`      |
+| FAQ               | `#faq`                 |
