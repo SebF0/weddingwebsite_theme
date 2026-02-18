@@ -99,8 +99,8 @@ export const SITE_CONTENT = {
         title: "Taxi or car hire",
         icon: "car",
         content: [
-          "If you are staying near the venue, taxis or Ubers will be easiest.",
-          "We will provide transport between the church and the reception. Ubers should be available late into the night.",
+          "Taxis or Ubers will be easiest, especially if you're staying nearer Toulouse.",
+          "We will provide transport between the church and the reception. Ubers will be available late into the night.",
           "If you would like to explore the region, hiring a car is worthwhile.",
         ],
       },
@@ -114,14 +114,14 @@ export const SITE_CONTENT = {
         title: "Near the venue",
         icon: "countryside",
         content: [
-          "For countryside calm and convenience, look for nearby Airbnbs or small hotels.",
+          "For convenience and countryside calm, look for nearby Airbnbs or small hotels.",
         ],
       },
       {
         title: "In Toulouse",
         icon: "city",
         content: [
-          "For restaurants, markets and beautiful architecture, stay in the city.",
+          "For restaurants, markets and medieval streets, stay in the city.",
           "Prettiest areas: Carmes, Esquirol, Saint-Cyprien, Saint-Georges, Saint-Étienne.",
           "The metro is simple and inexpensive.",
         ],

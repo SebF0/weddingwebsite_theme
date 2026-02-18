@@ -49,11 +49,11 @@ export default function GettingToEvents() {
 
                 {/* Optional list */}
                 {"list" in section && section.list && (
-                  <ul className="ml-0 space-y-2 text-left md:ml-6">
+                  <ul className="ml-0 space-y-2 text-center text-left md:ml-6 md:text-left">
                     {section.list.map((item, i) => (
                       <li
                         key={i}
-                        className="font-serif-main text-base leading-relaxed text-olive/70 md:text-lg"
+                        className="font-serif-main text-base text-center leading-relaxed text-olive/70 md:text-lg md:text-left"
                       >
                         {item}
                       </li>
