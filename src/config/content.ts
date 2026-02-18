@@ -29,9 +29,9 @@ export const SITE_CONTENT = {
     heading: "The French Chapter",
     paragraphs: [
       "France has quietly framed many of our biggest life decisions, so it felt only natural to continue that story and host our wedding there.",
-      "Some of you may have, very vocally, noted the gap between the proposal in 2023 and us finally setting a date. Unlike other milestones, such as securing a mortgage or saying “yes” to the ring, planning a wedding did not require urgent action in response to worsening weather or rising avalanche risk. More significantly, our focus shifted to something far more important: welcoming our baby girl, Amélie, in September 2025.",
-      "Toulouse looked after Sebastian for five years, leaving him with great friends, even greater memories, and a deep, arguably unhealthy, attachment to Victor Hugo Market.",
-      "The decision was made even easier when Sebastian was unexpectedly accepted as a French national, with the most immediate and visible benefit being access to the “EU” airport queue. Regrettably, this new citizenship has done nothing to improve his French, which had reached an all-time low, a fact only fully revealed after we had paid the deposit.",
+      "Some of you may have, very vocally, noted the gap between the proposal in 2023 and us finally setting a date. Unlike other milestones, such as securing a mortgage or coming engaged, planning a wedding did not require urgent action in response to worsening weather or rising avalanche risk. More significantly, our focus shifted to something far more important: welcoming our baby girl, Amélie, in September 2025.",
+      "Toulouse looked after Seb for five years, leaving him with great friends, even greater memories, and a deep, arguably unhealthy, attachment to Victor Hugo Market.",
+      "Since, Seb was surprisingly accepted as a French national, with the sole objective of accessing to the “EU” airport queue. Despite our hopes, this new citizenship has done nothing to improve his French, which had reached an all-time low, a fact only fully revealed after we had paid the deposit.",
       "We are so excited to host this next French chapter and celebrate with you in Toulouse."
     ],
     closing: "With love,",
@@ -41,7 +41,7 @@ export const SITE_CONTENT = {
   theDay: {
     heading: "Wedding Fête",
     subheading:
-      "Our special day begins in the main lobby bar, meet there at 12:30pm",
+      "Please meet at Église Saint-Pierre de Quint-Fonsegrives at 2:30pm, then we'll head to the reception at Chateau du Pujolet.",
     timeline: [
       { time: "3PM", label: "ceremony", location: "Église Saint-Pierre de Quint-Fonsegrives", icon: "rings" },
       { time: "5PM", label: "drinks", location: "Serre", icon: "champagne" },
@@ -51,7 +51,7 @@ export const SITE_CONTENT = {
       { time: "2AM", label: "hometime", location: "Reception Room", icon: "hometime" },
     ],
     dresscode: "Dresscode: Summer smart",
-    children: "Children: No children on the wedding day please, unless babes in arms.",
+    children: "Children: No children at the reception please, unless babes in arms.",
   },
 
   theWeekend: {
@@ -193,7 +193,7 @@ export const SITE_CONTENT = {
           },
           {
             type: "image",
-            src: "/Assets/parking-map.jpg",
+            src: "/Assets/Arrival.jpeg",
             alt: "Parking map",
           },
         ],

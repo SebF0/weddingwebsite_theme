@@ -84,12 +84,12 @@ export default function TheWeekend() {
             </div>
 
             {/* Dresscode */}
-            <p className="mt-8 border-t border-white/20 pt-6 text-center font-serif-main text-sm italic text-white/90 md:text-base">
+            <p className="mt-8 border-t border-white/20 pt-6 text-center font-serif-main text-sm text-white/90 md:text-base">
               Dresscode: {dresscode}
             </p>
 
             {/* Children note */}
-            <p className="mt-4 text-center font-serif-main text-sm leading-relaxed text-white/80 md:text-base">
+            <p className="mt-4 text-center font-serif-main text-sm leading-relaxed text-white/90 md:text-base">
               {children}
             </p>
           </div>
