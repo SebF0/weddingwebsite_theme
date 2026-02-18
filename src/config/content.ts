@@ -26,11 +26,13 @@ export const SITE_CONTENT = {
   },
 
   ourSpecialDay: {
-    heading: "Dear Friends and Family",
+    heading: "The French Chapter",
     paragraphs: [
-      "We are so excited to celebrate this special moment in our lives with our closest family and friends. Your love and support mean the world to us, and we can't wait to share this unforgettable day with you.",
-      "As we count down to our big day, we've created this website to keep you updated on all the details.",
-      "Thank you for being a part of our journey. We can't wait to celebrate with you!",
+      "France has quietly framed many of our biggest life decisions, so it felt only natural to continue that story and host our wedding there.",
+      "Some of you may have, very vocally, noted the gap between the proposal in 2023 and us finally setting a date. Unlike other milestones, such as securing a mortgage or saying “yes” to the ring, planning a wedding did not require urgent action in response to worsening weather or rising avalanche risk. More significantly, our focus shifted to something far more important: welcoming our baby girl, Amélie, in September 2025.",
+      "Toulouse looked after Sebastian for five years, leaving him with great friends, even greater memories, and a deep, arguably unhealthy, attachment to Victor Hugo Market.",
+      "The decision was made even easier when Sebastian was unexpectedly accepted as a French national, with the most immediate and visible benefit being access to the “EU” airport queue. Regrettably, this new citizenship has done nothing to improve his French, which had reached an all-time low, a fact only fully revealed after we had paid the deposit.",
+      "We are so excited to host this next French chapter and celebrate with you in Toulouse."
     ],
     closing: "With love,",
     signature: "Lou & Seb",
