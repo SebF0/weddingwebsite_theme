@@ -28,9 +28,9 @@ export const SITE_CONTENT = {
   ourSpecialDay: {
     heading: "The French Chapter",
     paragraphs: [
-      "France has quietly framed many of our biggest life decisions, securing our first home and becoming engaged, so it felt only natural to continue our story there and host our wedding there.",
-      "Toulouse itself was Seb's home for years, leaving him with great friends, even greater memories, and a deep, arguably unhealthy, attachment to Victor Hugo Market.",
-      "Our choice was cemented when Seb was unexpectedly accepted as a French national, but despite our best hopes, this new citizenship has done nothing to improve his French, which had reached an all-time low when we booked the venue.",
+      "France has quietly shaped some of our biggest moments, securing our first home, our engagement, so it felt natural that it would hold our wedding too.",
+      "Toulouse was Seb’s home for years. It gave him lifelong friends, unforgettable memories, and a deep, and somewhat unhealthy, attachment to Victor Hugo Market.",
+      "Seb was unexpectedly granted French citizenship - an accolade which done nothing to improve his French, we have been sad to discover.",
       "We are so excited to create our newest memory with you all in Toulouse."
     ],
     closing: "With love,",
