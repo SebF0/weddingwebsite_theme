@@ -56,6 +56,10 @@ async function logResult(params: {
 }
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
+  if (req.cookies.get("site_auth")?.value !== "ok") {
+    return NextResponse.json({ error: "Unauthorised." }, { status: 401 });
+  }
+
   const body = await req.json().catch(() => null);
   const question = parseQuestion(body);
 

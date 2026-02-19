@@ -30,7 +30,7 @@ export const SITE_CONTENT = {
     paragraphs: [
       "France has quietly framed many of our biggest life decisions, securing our first home and becoming engaged, so it felt only natural to continue our story there and host our wedding there.",
       "Toulouse itself was Seb's home for years, leaving him with great friends, even greater memories, and a deep, arguably unhealthy, attachment to Victor Hugo Market.",
-      "Our choice was cemented when Seb was unexpectedly accepted as a French national, but despite our best hopes, this new citizenship has done nothing to improve his French, which had reached an all-time low.",
+      "Our choice was cemented when Seb was unexpectedly accepted as a French national, but despite our best hopes, this new citizenship has done nothing to improve his French, which had reached an all-time low when we booked the venue.",
       "We are so excited to create our newest memory with you all in Toulouse."
     ],
     closing: "With love,",
@@ -39,8 +39,8 @@ export const SITE_CONTENT = {
 
   theDay: {
     heading: "Wedding Fête",
-    subheading:
-      "Please meet at Église Saint-Pierre de Quint-Fonsegrives at 2:30pm, then we'll head to the reception at Chateau du Pujolet.",
+    ceremony: "Ceremony: Église Saint-Pierre de Quint-Fonsegrives.", 
+    reception: "Reception: Chateau du Pujolet, Vallesvilles.",
     timeline: [
       { time: "3PM", label: "ceremony", location: "Église Saint-Pierre de Quint-Fonsegrives", icon: "rings" },
       { time: "5PM", label: "drinks", location: "Serre", icon: "champagne" },
