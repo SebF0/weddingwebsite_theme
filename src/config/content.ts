@@ -192,7 +192,7 @@ export const SITE_CONTENT = {
           },
           {
             type: "image",
-            src: "/Assets/parkingMap.jpeg",
+            src: "/Assets/Arrival.jpeg",
             alt: "Parking map",
           },
         ],
