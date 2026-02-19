@@ -60,10 +60,14 @@ export default function FAQ() {
                 </svg>
               </button>
 
-              {/* Answer content */}
-              {openIndex === index && (
-                <div className="pb-6 pr-8">
-                  <div className="space-y-4">
+              {/* Answer content - animated to match chevron duration-200 */}
+              <div
+                className={`grid transition-[grid-template-rows] duration-200 ease-in-out ${
+                  openIndex === index ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                }`}
+              >
+                <div className="min-h-0 overflow-hidden">
+                  <div className="space-y-4 pb-6 pr-8">
                     {faq.answer.map((item, i) => {
                       if (item.type === "subtitle") {
                         return (
@@ -120,7 +124,7 @@ export default function FAQ() {
                     })}
                   </div>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>
