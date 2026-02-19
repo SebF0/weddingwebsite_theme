@@ -6,7 +6,7 @@ import { SITE_CONTENT } from "@/config/content";
 
 /**
  * FAQ section with accordion-style collapsible questions.
- * Light cream theme with dynamic content from config.
+ * Dark green theme with white text, matching WhereToStay section.
  */
 export default function FAQ() {
   const { heading, questions } = SITE_CONTENT.faq;
@@ -19,11 +19,11 @@ export default function FAQ() {
   return (
     <section
       id="faq"
-      className="bg-cream py-16 md:py-24 lg:py-30"
+      className="bg-olive-light py-16 md:py-24 lg:py-30"
     >
       <div className="mx-auto max-w-4xl px-6 md:px-10 lg:px-16">
         {/* Section heading */}
-        <h2 className="text-center font-serif-main text-3xl uppercase tracking-wedding text-olive md:text-4xl">
+        <h2 className="text-center font-serif-main text-3xl uppercase tracking-wedding text-white md:text-4xl">
           {heading}
         </h2>
 
@@ -32,14 +32,14 @@ export default function FAQ() {
           {questions.map((faq, index) => (
             <div
               key={index}
-              className="border-b border-olive/20"
+              className="border-b border-white/20"
             >
               {/* Question button */}
               <button
                 onClick={() => toggleQuestion(index)}
-                className="flex w-full items-center justify-between py-4 text-left transition-colors hover:text-olive/70"
+                className="flex w-full items-center justify-between py-4 text-left transition-colors hover:text-white/80"
               >
-                <h3 className="font-serif-main text-lg font-semibold uppercase text-olive md:text-xl">
+                <h3 className="font-serif-main text-lg font-semibold uppercase text-white md:text-xl">
                   {faq.question}
                 </h3>
                 <svg
@@ -52,7 +52,7 @@ export default function FAQ() {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className={`ml-4 flex-shrink-0 text-olive/60 transition-transform duration-200 ${
+                  className={`ml-4 flex-shrink-0 text-white/70 transition-transform duration-200 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 >
@@ -69,7 +69,7 @@ export default function FAQ() {
                         return (
                           <p
                             key={i}
-                            className="font-serif-main text-base font-semibold text-olive md:text-lg"
+                            className="font-serif-main text-base font-semibold text-white md:text-lg"
                           >
                             {item.content}
                           </p>
@@ -80,7 +80,7 @@ export default function FAQ() {
                         return (
                           <p
                             key={i}
-                            className="font-serif-main text-base leading-relaxed text-olive/80 md:text-lg"
+                            className="font-serif-main text-base leading-relaxed text-white/90 md:text-lg"
                           >
                             {item.content}
                           </p>
@@ -91,7 +91,7 @@ export default function FAQ() {
                         return (
                           <div
                             key={i}
-                            className="relative mt-6 aspect-video w-full overflow-hidden rounded border border-olive/30 bg-cream-dark"
+                            className="relative mt-6 aspect-video w-full overflow-hidden rounded border border-white/30 bg-olive"
                           >
                             <Image
                               src={item.src}
@@ -109,7 +109,7 @@ export default function FAQ() {
                           <a
                             key={i}
                             href={item.url}
-                            className="inline-block font-serif-main text-base font-semibold text-olive underline transition-colors hover:text-olive/70 md:text-lg"
+                            className="inline-block font-serif-main text-base font-semibold text-white underline transition-colors hover:text-white/80 md:text-lg"
                           >
                             {item.text}
                           </a>
