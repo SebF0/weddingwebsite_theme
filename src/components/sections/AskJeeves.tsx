@@ -13,7 +13,7 @@ const FETCH_ERROR = "That didn't work. Try again.";
  * No chat history — only the most recent answer is shown.
  */
 export default function AskJeeves() {
-  const { heading, heading2, subheading, placeholder, buttonLabel, note } =
+  const { heading, heading2, subheading, placeholder, buttonLabel, note_ai } =
     SITE_CONTENT.askJeeves;
 
   const [question, setQuestion] = useState("");
@@ -89,7 +89,7 @@ export default function AskJeeves() {
                 disabled={loading}
                 className="w-full border border-olive/40 bg-cream px-4 py-3 font-serif-main text-base text-olive placeholder:text-olive/40 focus:border-olive focus:outline-none disabled:opacity-50"
               />
-              <p className="mt-1 text-right font-serif-main text-xs text-olive/40">
+              <p className="mt-1 text-right font-serif-main text-md text-olive/40">
                 {question.length}/{MAX_QUESTION_CHARS}
               </p>
             </div>
@@ -129,8 +129,8 @@ export default function AskJeeves() {
             </div>
           )}
 
-          <p className="mt-6 font-serif-main text-xs text-olive/40">
-            {note}
+          <p className="mt-6 font-serif-main italic text-md text-olive/60 lg:text-lg">
+            {note_ai}
           </p>
         </div>
       </div>

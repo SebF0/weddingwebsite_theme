@@ -229,6 +229,6 @@ export const SITE_CONTENT = {
     subheading: "Ask silly questions, and get silly answers.",
     placeholder: "Type your question…",
     buttonLabel: "Ask",
-    note: "Answers are AI generated therefore must be followed verbatim.",
+    note_ai: "Answers are AI generated therefore must be followed verbatim.",
   },
 } as const;
