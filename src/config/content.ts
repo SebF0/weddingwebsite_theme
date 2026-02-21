@@ -28,9 +28,9 @@ export const SITE_CONTENT = {
   ourSpecialDay: {
     heading: "The French Chapter",
     paragraphs: [
-      "France has framed some of our biggest life moments, from securing our home to securing our engagement, so it felt like the natural place for our wedding.",
-      "Toulouse itself was Seb’s home for years, providing him with great friends, fond memories, but much to our dismay, a low level of French.",
-      "We’re excited to invite you to Chateau du Pujolet to create our most memorable French moment yet.",
+      "France has framed some of our biggest life moments, from securing our home to getting engaged, so it felt like the natural place for our wedding.",
+      "We settled on Toulouse which was Seb’s home for years, providing him with great friends, fond memories, and an attachment to the Sud-Ouest.",
+      "So please join us as we create our most meaningful French memory yet.",
     ],
     closing: "With love,",
     signature: "Louise & Sebastian",
@@ -41,11 +41,11 @@ export const SITE_CONTENT = {
     ceremony: "Ceremony: Église Saint-Pierre de Quint-Fonsegrives.", 
     reception: "Reception: Chateau du Pujolet, Vallesvilles.",
     timeline: [
-      { time: "3PM", label: "ceremony", location: "Église Saint-Pierre de Quint-Fonsegrives", icon: "rings" },
-      { time: "5PM", label: "drinks", location: "Serre", icon: "champagne" },
-      { time: "7PM", label: "dinner", location: "Grange", icon: "dinner" },
-      { time: "10PM", label: "cake cutting", location: "Reception Room", icon: "cake" },
-      { time: "11PM", label: "party", location: "Reception Room", icon: "party" },
+      { time: "2PM", label: "ceremony", location: "Église Saint-Pierre de Quint-Fonsegrives", icon: "rings" },
+      { time: "4PM", label: "drinks", location: "Serre", icon: "champagne" },
+      { time: "5PM", label: "dinner", location: "Grange", icon: "dinner" },
+      { time: "8PM", label: "cake cutting", location: "Reception Room", icon: "cake" },
+      { time: "9PM", label: "party", location: "Reception Room", icon: "party" },
       { time: "2AM", label: "hometime", location: "Reception Room", icon: "hometime" },
     ],
     dresscode: "Dresscode: Summer smart",
@@ -55,7 +55,7 @@ export const SITE_CONTENT = {
   theWeekend: {
     heading: "Part Deux",
     subheading:
-      "We'd love to see as many of you as we can for a more relaxed day around the pool to debrief and catch up.",
+      "We'd love to see as many of you as we can for a more relaxed day around the pool and grounds to debrief, catch up.",
     timeline: [
       {
         time: "11AM",
@@ -71,7 +71,7 @@ export const SITE_CONTENT = {
       },
     ],
     dresscode:
-      "Beach chilled... bring swimmers, the pool is heated.",
+      "Summer casual... bring swimmers and a towel, the pool is heated.",
     children:
       "Ideally no children.",
   },
@@ -98,8 +98,7 @@ export const SITE_CONTENT = {
         icon: "car",
         content: [
           "Taxis or Ubers will be easiest, especially if you're staying nearer Toulouse.",
-          "We will provide transport between the church and the reception. Ubers will be available late into the night.",
-          "If you would like to explore the region, hiring a car is worthwhile.",
+          "We will provide transport from the church to the reception. Ubers can be booked late into the night.",
         ],
       },
     ],
@@ -133,8 +132,8 @@ export const SITE_CONTENT = {
     items: [
       "If you're joining us on Saturday.",
       "If you're joining us on Sunday.",
-      "Any dietary requirements.",
-      "Any other questions or help you need.",
+      "Have any dietary requirements.",
+      "Have any other questions or need help.",
     ],
     description2: "by phone, email or via this form.",
     closing: "We're looking forward to celebrating with you.",

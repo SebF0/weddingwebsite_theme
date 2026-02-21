@@ -5,7 +5,7 @@ import { useState } from "react";
 const MAX_MESSAGE_CHARS = 1000;
 const FETCH_ERROR = "That didn't work. Please try again.";
 const MESSAGE_PLACEHOLDER =
-  "Please let us know:\n- If you're joining us on Saturday\n- If you're joining us on Sunday\n- Any dietary requirements\n- Any questions";
+  "Please let us know:\n- If you're joining us on Saturday.\n- If you're joining us on Sunday.\n- Have any dietary requirements.\n- Have any questions.";
 
 interface FormFields {
   name: string;
