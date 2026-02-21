@@ -29,8 +29,8 @@ export const SITE_CONTENT = {
     heading: "The French Chapter",
     paragraphs: [
       "France has framed some of our biggest life moments, from securing our home to securing our engagement, so it felt like the natural place for our wedding.",
-      "Toulouse itself was Seb’s home for years, providing him with new experiences, great friends, fond memories, but much to my dismay, it couldn’t do much for his French accent.",
-      "We’re excited to invite you to Chateau du Pujolet to create our most memorable French moment with you all.",
+      "Toulouse itself was Seb’s home for years, providing him with great friends, fond memories, but much to our dismay, a low level of French.",
+      "We’re excited to invite you to Chateau du Pujolet to create our most memorable French moment yet.",
     ],
     closing: "With love,",
     signature: "Louise & Sebastian",
