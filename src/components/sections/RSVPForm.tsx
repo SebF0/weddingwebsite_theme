@@ -138,7 +138,7 @@ export default function RSVPForm() {
       <button
         onClick={handleSubmit}
         disabled={loading}
-        className="self-start border border-olive bg-olive px-6 py-3 font-serif-main text-sm uppercase tracking-wedding text-cream transition-opacity hover:opacity-80 disabled:opacity-50"
+        className="self-start border border-olive bg-olive/70 px-6 py-3 font-serif-main text-sm uppercase tracking-wedding text-cream transition-opacity hover:opacity-50 disabled:opacity-20"
       >
         {loading ? "Submitting…" : "Submit"}
       </button>

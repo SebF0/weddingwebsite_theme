@@ -28,10 +28,9 @@ export const SITE_CONTENT = {
   ourSpecialDay: {
     heading: "The French Chapter",
     paragraphs: [
-      "France has quietly shaped some of our biggest moments, securing our first home, our engagement, so it felt natural that it would hold our wedding too.",
-      "Toulouse was Seb’s home for years. It gave him lifelong friends, unforgettable memories, and a deep, and somewhat unhealthy, attachment to Victor Hugo Market.",
-      "Seb was unexpectedly granted French citizenship - an accolade which done nothing to improve his French, we have been sad to discover.",
-      "We are so excited to create our newest memory with you all in Toulouse."
+      "France has framed some of our biggest life moments, from securing our home to securing our engagement, so it felt like the natural place for our wedding.",
+      "Toulouse itself was Seb’s home for years, providing him with new experiences, great friends, fond memories, but much to my dismay, it couldn’t do much for his French accent.",
+      "We’re excited to create our newest French memory with you all.",
     ],
     closing: "With love,",
     signature: "Louise & Sebastian",
@@ -72,9 +71,9 @@ export const SITE_CONTENT = {
       },
     ],
     dresscode:
-      "Beach chilled – bring swimmers, the pool is heated.",
+      "Beach chilled... bring swimmers, the pool is heated.",
     children:
-      "Ideally no children. If you're in a bind, we'll arrange a childminder to help.",
+      "Ideally no children.",
   },
 
   gettingToEvents: {
@@ -84,7 +83,7 @@ export const SITE_CONTENT = {
         title: "Flying",
         icon: "plane",
         content: [
-          "The nearest airport is Toulouse–Blagnac (around 35 minutes by Uber or taxi).",
+          "The nearest airport is Toulouse–Blagnac (around 35 minutes by Uber).",
           "Other nearby airports:",
         ],
         list: [
@@ -92,7 +91,7 @@ export const SITE_CONTENT = {
           "Béziers – 2 hours",
           "Bordeaux – 2.5 hours",
         ],
-        note: "Toulouse will have the best range of flights.",
+        // note: "Toulouse will have the best range of flights.",
       },
       {
         title: "Taxi or car hire",
@@ -132,10 +131,10 @@ export const SITE_CONTENT = {
     heading: "RSVP",
     description: "Please let us know:",
     items: [
-      "If you're joining us on Saturday",
-      "If you're joining us on Sunday",
-      "Any dietary requirements",
-      "Any questions",
+      "If you're joining us on Saturday.",
+      "If you're joining us on Sunday.",
+      "Any dietary requirements.",
+      "Any other questions or help you need.",
     ],
     description2: "by phone, email or via this form.",
     closing: "We're looking forward to celebrating with you.",
@@ -154,7 +153,7 @@ export const SITE_CONTENT = {
       },
       {
         name: "Carcassonne",
-        description: "A beautifully preserved fortified city.",
+        description: "A beautifully preserved fortified city. Minervois wines nearby.",
       },
     ],
     note: "You might also explore some of the Plus Beaux Villages de France: Cordes-sur-Ciel, Lautrec, Castelnau-de-Montmiral.",
@@ -203,7 +202,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "We'd love to enjoy everyone's company without them worrying about their children all day every day. If you can't get childcare and need any help coming up with solutions, just reach out to us.",
+            content: "We’ve asked for no children because we’'d love to enjoy everyone's company and for them to enjoy the weekend. If you are struggling with childcare, get in touch with us to help coming up with solutions.",
           },
         ],
       },
@@ -230,6 +229,6 @@ export const SITE_CONTENT = {
     subheading: "Ask silly questions, and get silly answers.",
     placeholder: "Type your question…",
     buttonLabel: "Ask",
-    note_ai: "Answers are AI generated therefore must be followed verbatim.",
+    note_ai: "Answers are SebAI generated therefore are sometimes a bit scatty and meandering.",
   },
 } as const;

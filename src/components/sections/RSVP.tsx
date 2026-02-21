@@ -128,7 +128,7 @@ export default function RSVP() {
         <div className="flex flex-col">
           {Array.from({ length: LINE_COUNT }).map((_, i) => (
             <div key={i}>
-              <div className="w-full bg-olive/60" style={{ height: LINE_THICKNESS_MOBILE }} />
+              <div className="w-full bg-olive/70" style={{ height: LINE_THICKNESS_MOBILE }} />
               <div className="w-full bg-cream" style={{ height: SPACE_SIZE_MOBILE }} />
             </div>
           ))}
