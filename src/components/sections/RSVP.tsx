@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { SITE_CONTENT } from "@/config/content";
 import RSVPForm from "./RSVPForm";
 
@@ -13,27 +12,15 @@ const DESKTOP_GAP = `calc(150vw / ${DESKTOP_UNITS})`;
 const LINE_THICKNESS_MOBILE = "10px";
 const SPACE_SIZE_MOBILE = "16px";
 
-/** Splits description2 into the text before and after "via this form". */
-function splitDescription2(text: string) {
-  const LINK_TEXT = "via this form";
-  const idx = text.indexOf(LINK_TEXT);
-  if (idx === -1) return { before: text, after: "" };
-  return {
-    before: text.slice(0, idx),
-    after: text.slice(idx + LINK_TEXT.length),
-  };
-}
 
 /**
  * RSVP section with text on left and decorative vertical lines on right.
  * Desktop: full-height vertical lines extending to screen edge.
  * Mobile: full-width horizontal lines with alternating pattern.
- * Clicking "via this form" reveals an inline RSVP form.
+ * Includes an inline RSVP form.
  */
 export default function RSVP() {
   const { heading, description, items, closing, description2 } = SITE_CONTENT.rsvp;
-  const [showForm, setShowForm] = useState(false);
-  const { before, after } = splitDescription2(description2);
 
   return (
     <section id="rsvp" className="relative bg-cream">
@@ -58,17 +45,10 @@ export default function RSVP() {
             </ul>
 
             <p className="mt-8 font-serif-main text-lg leading-relaxed text-olive/80">
-              {before}
-              <button
-                onClick={() => setShowForm(true)}
-                className="underline underline-offset-2 hover:opacity-70"
-              >
-                via this form
-              </button>
-              {after}
+              {description2}
             </p>
 
-            {showForm && <RSVPForm />}
+            <RSVPForm />
 
             <p className="mt-10 font-serif-main text-lg italic leading-relaxed text-olive/80">
               {closing}
@@ -107,17 +87,10 @@ export default function RSVP() {
           </ul>
 
           <p className="mt-6 font-serif-main text-base leading-relaxed text-olive/80">
-            {before}
-            <button
-              onClick={() => setShowForm(true)}
-              className="underline underline-offset-2 hover:opacity-70"
-            >
-              via this form
-            </button>
-            {after}
+            {description2}
           </p>
 
-          {showForm && <RSVPForm />}
+          <RSVPForm />
 
           <p className="mt-8 font-serif-main text-base italic leading-relaxed text-olive/80">
             {closing}
