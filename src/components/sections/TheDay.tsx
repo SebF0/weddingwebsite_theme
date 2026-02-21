@@ -6,7 +6,7 @@ import TimelineIcon from "@/components/icons/TimelineIcon";
  * Icons are simple SVGs; times and labels come from config/content.ts.
  */
 export default function TheDay() {
-  const { heading, subheading, timeline, dresscode, children, ceremony, reception } = SITE_CONTENT.theDay;
+  const { heading, timeline, dresscode, children, ceremony, reception } = SITE_CONTENT.theDay;
 
   return (
     <section
@@ -19,12 +19,12 @@ export default function TheDay() {
           {heading}
         </h2>
 
-        {/* Subheading in Ceremony */}
+        {/* Ceremony */}
         <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
           {ceremony}
         </p>
 
-        {/* Subheading in Reception */}
+        {/* Reception */}
         <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
           {reception}
         </p>
@@ -57,11 +57,11 @@ export default function TheDay() {
           ))}
                    
         </div>
- {/* Subheading in script */}
+ {/* Dresscode */}
  <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
           {dresscode}
         </p>
-                {/* Subheading in script */}
+                {/* Chldren */}
                 <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
           {children}
         </p>
