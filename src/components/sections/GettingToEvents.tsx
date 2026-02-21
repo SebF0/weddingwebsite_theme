@@ -1,12 +1,21 @@
 import { SITE_CONTENT } from "@/config/content";
 import TimelineIcon from "@/components/icons/TimelineIcon";
 
+type TravelSection = {
+  title: string;
+  icon: string;
+  content: readonly string[];
+  list?: readonly string[];
+  note?: string;
+};
+
 /**
  * Light section with travel information.
  * Icons for flying and car hire help break up text content.
  */
 export default function GettingToEvents() {
-  const { heading, sections } = SITE_CONTENT.gettingToEvents;
+  const { heading } = SITE_CONTENT.gettingToEvents;
+  const sections = SITE_CONTENT.gettingToEvents.sections as readonly TravelSection[];
 
   return (
     <section
