@@ -12,7 +12,7 @@ const SPACE_SIZE_MOBILE = "16px";
  * Mobile: full-width horizontal lines with alternating pattern.
  */
 export default function RSVP() {
-  const { heading, description, items, closing } = SITE_CONTENT.rsvp;
+  const { heading, description, items, closing, description2 } = SITE_CONTENT.rsvp;
 
   return (
     <section
@@ -42,6 +42,10 @@ export default function RSVP() {
                 </li>
               ))}
             </ul>
+
+            <p className="mt-8 font-serif-main text-lg leading-relaxed text-olive/80">
+              {description2}
+            </p>
 
             <p className="mt-10 font-serif-main text-lg italic leading-relaxed text-olive/80">
               {closing}

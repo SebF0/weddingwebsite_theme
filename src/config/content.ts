@@ -130,13 +130,14 @@ export const SITE_CONTENT = {
 
   rsvp: {
     heading: "RSVP",
-    description: "Please let us know by phone, email or via this form:",
+    description: "Please let us know:",
     items: [
       "If you're joining us on Saturday",
       "If you're joining us on Sunday",
       "Any dietary requirements",
       "Any questions",
     ],
+    description2: "by phone, email or via this form.",
     closing: "We're looking forward to celebrating with you.",
   },
 
