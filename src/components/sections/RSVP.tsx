@@ -5,8 +5,11 @@ import { SITE_CONTENT } from "@/config/content";
 import RSVPForm from "./RSVPForm";
 
 const LINE_COUNT = 8;
-const LINE_THICKNESS = "20px";
-const SPACE_SIZE = "60px";
+// Desktop: 8 lines + 7 gaps at a 1:3 ratio → 29 total units spanning 50vw.
+const DESKTOP_UNITS = LINE_COUNT + (LINE_COUNT - 1) * 3; // 29
+const DESKTOP_LINE_WIDTH = `calc(50vw / ${DESKTOP_UNITS})`;
+const DESKTOP_GAP = `calc(150vw / ${DESKTOP_UNITS})`;
+
 const LINE_THICKNESS_MOBILE = "10px";
 const SPACE_SIZE_MOBILE = "16px";
 
@@ -73,10 +76,13 @@ export default function RSVP() {
           </div>
         </div>
 
-        {/* Vertical lines — full height, equally spaced to screen edge */}
-        <div className="absolute bottom-0 right-0 top-0 flex" style={{ gap: SPACE_SIZE }}>
+        {/* Vertical lines — always 50% of screen width, proportionally spaced */}
+        <div
+          className="absolute bottom-0 right-0 top-0 flex"
+          style={{ width: "50%", gap: DESKTOP_GAP }}
+        >
           {Array.from({ length: LINE_COUNT }).map((_, i) => (
-            <div key={i} className="bg-olive/80" style={{ width: LINE_THICKNESS }} />
+            <div key={i} className="bg-olive/80" style={{ width: DESKTOP_LINE_WIDTH }} />
           ))}
         </div>
       </div>
