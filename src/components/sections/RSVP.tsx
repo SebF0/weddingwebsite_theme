@@ -39,8 +39,8 @@ export default function RSVP() {
     <section id="rsvp" className="relative bg-cream">
       {/* Desktop layout */}
       <div className="hidden md:flex md:min-h-[600px] lg:min-h-[700px]">
-        <div className="flex w-full max-w-2xl items-start py-28 pl-10 pr-16 lg:py-32 lg:pl-24 lg:pr-20">
-          <div className="flex flex-col items-start text-left">
+        <div className="flex w-1/2 items-start py-28 px-10 lg:py-32 lg:px-16">
+          <div className="flex w-full flex-col items-start text-left">
             <h2 className="font-serif-main text-4xl uppercase tracking-wedding text-olive lg:text-5xl">
               {heading}
             </h2>
