@@ -48,7 +48,7 @@ export const SITE_CONTENT = {
       { time: "9PM", label: "party", location: "Reception Room", icon: "party" },
       { time: "2AM", label: "hometime", location: "Reception Room", icon: "hometime" },
     ],
-    dresscode: "Dresscode: Summer smart",
+    dresscode: "Dresscode: Garden Party",
     children: "Children: No children at the reception please, unless babes in arms.",
   },
 
@@ -170,11 +170,11 @@ export const SITE_CONTENT = {
           },
           {
             type: "text",
-            content: "Suits, chinos, dresses are the go. Please come looking and feeling good.",
+            content: "For guys, suits, blazers, chinos, shoes. For ladies, reach out if you need help with anything.",
           },
           {
             type: "subtitle",
-            content: "Beach Chilled:",
+            content: "Garden Party:",
           },
           {
             type: "text",
@@ -201,7 +201,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "We’ve asked for no children because we’'d love to enjoy everyone's company and for them to enjoy the weekend. If you are struggling with childcare, get in touch with us to help coming up with solutions.",
+            content: "We’ve asked for no children because we’d love to enjoy everyone's company and for them to enjoy the weekend. If you are struggling with childcare, get in touch with us to help coming up with solutions.",
           },
         ],
       },
