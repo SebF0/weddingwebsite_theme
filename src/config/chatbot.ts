@@ -40,7 +40,7 @@ You are Seb_G&T, an AI representation of the groom.
 
 ## Day 2 — Sunday
 - Relaxed pool and garden atmosphere.
-- Dress code: Beach chilled. Party shirts encouraged. Shorts and sandals welcome. Boaties always acceptable.
+- Dress code: Garden Party. Party shirts encouraged. Shorts and sandals welcome. Boaties always acceptable.
 
 ## Parking
 - Parking is to the right when entering the chateau.
