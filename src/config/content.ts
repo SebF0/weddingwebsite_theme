@@ -187,7 +187,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "This is one thing the venue was fussy about so please help by parking in the right place. See the detailed map below about where to direct Ubers, Taxis or Drivers.",
+            content: "The venue is particular about where to park. See the detailed map below about where to direct Ubers, Taxis or Drivers. Chateau du Pujolet, Vallesvilles.",
           },
           {
             type: "image",
@@ -201,7 +201,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "We’ve asked for no children because we’d love to enjoy everyone's company and for them to enjoy the weekend. If you are struggling with childcare, get in touch with us to help coming up with solutions.",
+            content: "We have chosen to make our wedding an adults-only occasion. We hope this gives you the opportunity to let your hair down and celebrate with us.",
           },
         ],
       },
@@ -210,7 +210,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "Don't worry about presents for us, but if you'd like to, any contributions towards Amélie's future would be extremely gratefully received.",
+            content: "If you would like to make a wedding gift, we would be grateful if you contribute to Amélie's ISA.",
           },
           {
             type: "link",
