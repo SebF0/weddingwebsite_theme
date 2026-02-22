@@ -29,7 +29,7 @@ export const SITE_CONTENT = {
     heading: "The French Chapter",
     paragraphs: [
       "France has framed some of our biggest life moments, from securing our home to getting engaged, so it felt like the natural place for our wedding.",
-      "We settled on Toulouse which was Seb’s home for years, providing him with great friends, fond memories, and an attachment to the Sud-Ouest.",
+      "We settled on Toulouse, which was Seb’s home for years, providing him with amazing friends, incredible memories, and a lasting affection for all things Sud-Ouest.",
       "So please join us as we create our most meaningful French memory yet.",
     ],
     closing: "With love,",
@@ -210,12 +210,12 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "If you would like to make a wedding gift, we would be grateful if you contribute to Amélie's ISA.",
+            content: "If you would like to make a wedding gift, we would be grateful if you contribute to Amélie's Junior ISA via a PayPal pool.",
           },
           {
             type: "link",
             text: "Contribute here",
-            url: "#",
+            url: "https://www.paypal.com/pool/9mSkhoNeQq?sr=wccr",
           },
         ],
       },
@@ -225,7 +225,7 @@ export const SITE_CONTENT = {
   askJeeves: {
     heading: "Ask... Seb",
     heading2: "G&T",
-    subheading: "Ask silly questions, and get silly answers.",
+    subheading: "Ask SebG&T anything about the wedding, the people or just have some fun.",
     placeholder: "Type your question…",
     buttonLabel: "Ask",
     note_ai: "Answers are SebAI generated therefore are sometimes a bit scatty and meandering.",

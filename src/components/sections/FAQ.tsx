@@ -113,6 +113,8 @@ export default function FAQ() {
                           <a
                             key={i}
                             href={item.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
                             className="inline-block font-serif-main text-base font-semibold text-white underline transition-colors hover:text-white/80 md:text-lg"
                           >
                             {item.text}
