@@ -28,8 +28,8 @@ export const SITE_CONTENT = {
   ourSpecialDay: {
     heading: "The French Chapter",
     paragraphs: [
-      "France has framed some of our biggest life moments, from securing our home to getting engaged, so it felt like the natural place for our wedding.",
-      "We settled on Toulouse, which was Seb’s home for years, providing him with amazing friends, incredible memories, and a lasting affection for all things Sud-Ouest.",
+      "France has framed some of our biggest life moments, from securing a home to getting engaged, so it felt like the natural place for our wedding.",
+      "We settled on Toulouse because, it provided him with amazing friends, incredible memories, and a lasting affection for all things Sud-Ouest.",
       "So please join us as we create our most meaningful French memory yet.",
     ],
     closing: "With love,",
@@ -71,7 +71,7 @@ export const SITE_CONTENT = {
       },
     ],
     dresscode:
-      "Summer casual... bring swimmers and a towel, the pool is heated.",
+      "Garden Party. Bring swimmers and a towel, the pool is heated.",
     children:
       "Ideally no children.",
   },
