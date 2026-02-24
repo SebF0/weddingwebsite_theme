@@ -28,8 +28,8 @@ export const SITE_CONTENT = {
   ourSpecialDay: {
     heading: "The French Chapter",
     paragraphs: [
-      "France has framed some of our biggest life moments, from securing a home to getting engaged, so it felt like the natural place for our wedding.",
-      "We settled on Toulouse because, it provided him with amazing friends, incredible memories, and a lasting affection for all things Sud-Ouest.",
+      "France has framed some of our biggest life moments, from securing our first home together to getting engaged, so it felt like the natural place for our wedding.",
+      "Toulouse itself was Seb's home for years, providing him with amazing friends, incredible memories, and a lasting affection for all things Sud-Ouest.",
       "So please join us as we create our most meaningful French memory yet.",
     ],
     closing: "With love,",
@@ -48,14 +48,14 @@ export const SITE_CONTENT = {
       { time: "9PM", label: "party", location: "Reception Room", icon: "party" },
       { time: "2AM", label: "hometime", location: "Reception Room", icon: "hometime" },
     ],
-    dresscode: "Dresscode: Garden Party",
+    dresscode: "Dresscode: Summer Smart",
     children: "Children: No children at the reception please, unless babes in arms.",
   },
 
   theWeekend: {
     heading: "Part Deux",
     subheading:
-      "We'd love to see as many of you as we can for a more relaxed day around the pool and grounds to debrief, catch up.",
+      "Please join us the next day at Chateau du Pujolet for a more relaxed celebration by the pool and grounds.",
     timeline: [
       {
         time: "11AM",
@@ -71,9 +71,9 @@ export const SITE_CONTENT = {
       },
     ],
     dresscode:
-      "Garden Party. Bring swimmers and a towel, the pool is heated.",
+      "Garden Party. Bring swimmers and a towel - the pool is heated.",
     children:
-      "Ideally no children.",
+      "Children: We’d prefer no children, though we appreciate childcare isn’t always possible and understand if they need to come.",
   },
 
   gettingToEvents: {
@@ -97,8 +97,8 @@ export const SITE_CONTENT = {
         title: "Taxi or car hire",
         icon: "car",
         content: [
-          "Taxis or Ubers will be easiest, especially if you're staying nearer Toulouse.",
-          "We will provide transport from the church to the reception. Ubers can be booked late into the night.",
+          "Taxis or Uber will be easiest, especially if you're staying nearer Toulouse.",
+          "We will provide transport from the church to the reception. You can book an Uber late into the night.",
         ],
       },
     ],
@@ -128,14 +128,14 @@ export const SITE_CONTENT = {
 
   rsvp: {
     heading: "RSVP",
-    description: "Please let us know:",
+    description: "Please let us know if you:",
     items: [
-      "If you're joining us on Saturday.",
-      "If you're joining us on Sunday.",
+      "Are joining us on Saturday.",
+      "Are joining us on Sunday.",
       "Have any dietary requirements.",
       "Have any other questions or need help.",
     ],
-    description2: "by phone, email or via this form.",
+    description2: "by phone, email or via this form:",
     closing: "We're looking forward to celebrating with you.",
   },
 
@@ -162,7 +162,7 @@ export const SITE_CONTENT = {
     heading: "FAQ",
     questions: [
       {
-        question: "More on the Dresscode",
+        question: "More on the Dress code",
         answer: [
           {
             type: "subtitle",
@@ -170,7 +170,7 @@ export const SITE_CONTENT = {
           },
           {
             type: "text",
-            content: "For guys, suits, blazers, chinos, shoes. For ladies, reach out if you need help with anything.",
+            content: "Tailored, polished and appropriate for a warm-weather celebration.",
           },
           {
             type: "subtitle",
@@ -178,7 +178,7 @@ export const SITE_CONTENT = {
           },
           {
             type: "text",
-            content: "Party shirts are encouraged. Shorts and sandals are welcome. Needless to say, Boaties work every time.",
+            content: "Relaxed summer style.",
           },
         ],
       },
@@ -187,7 +187,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "The venue is particular about where to park. See the detailed map below about where to direct Ubers, Taxis or Drivers. Chateau du Pujolet, Vallesvilles.",
+            content: "The venue is particular about where to park. See the detailed map below about where to direct drivers to the venue - Chateau du Pujolet, Vallesvilles.",
           },
           {
             type: "image",
@@ -201,7 +201,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "We have chosen to make our wedding an adults-only occasion. We hope this gives you the opportunity to let your hair down and celebrate with us.",
+            content: "We have chosen to make our wedding an adults-only occasion. We hope this gives you the opportunity to let your hair down and celebrate with us. If arranging childcare proves difficult, please let us know and I’m sure we can help - the most important thing to us is that you’re able to be there.",
           },
         ],
       },
@@ -210,7 +210,7 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "If you would like to make a wedding gift, we would be grateful if you contribute to Amélie's Junior ISA via a PayPal pool.",
+            content: "If you would like to make a wedding gift, we would be grateful for contributions to Amélie's future. All contributions will be put into her Junior ISA, so even if we completely suck at parenting, you'll be giving her a decent shot at adulthood.",
           },
           {
             type: "link",
@@ -228,6 +228,6 @@ export const SITE_CONTENT = {
     subheading: "Ask SebG&T anything about the wedding, the people or just have some fun.",
     placeholder: "Type your question…",
     buttonLabel: "Ask",
-    note_ai: "Answers are SebAI generated therefore are sometimes a bit scatty and meandering.",
+    note_ai: "Answers are SebAI generated and therefore are sometimes a bit scatty and meandering.",
   },
 } as const;

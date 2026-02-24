@@ -28,7 +28,7 @@ export default function RSVP() {
       <div className="hidden md:flex md:min-h-[600px] lg:min-h-[700px]">
         <div className="flex w-1/2 items-start py-28 px-10 lg:py-32 lg:px-16">
           <div className="flex w-full flex-col items-start text-left">
-            <h2 className="font-serif-main text-4xl uppercase tracking-wedding text-olive lg:text-5xl">
+            <h2 className="font-serif-main text-3xl uppercase tracking-wedding text-olive lg:text-4xl">
               {heading}
             </h2>
 

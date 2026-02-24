@@ -66,9 +66,9 @@ export default function AskJeeves() {
     <section id="ask-jeeves" className="bg-cream py-16 md:py-24 lg:py-32">
       <div className="mx-auto px-5 md:px-16 lg:px-20">
         <div className="w-full border-4 border-olive/70 p-10 md:p-20">
-          <h2 className="font-serif-main text-3xl normal-case tracking-wedding text-olive md:text-4xl lg:text-5xl">
+          <h2 className="font-serif-main text-3xl normal-case tracking-wedding text-olive lg:text-4xl">
             {heading}{""}
-            <span className="font-script normal-case tracking-wedding text-olive text-5xl md:text-6xl lg:text-7xl">
+            <span className="font-script normal-case tracking-wedding text-olive text-4xl lg:text-6xl">
               {heading2}
             </span>
           </h2>
