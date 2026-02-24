@@ -55,7 +55,7 @@ export const SITE_CONTENT = {
 
   theWeekend: {
     heading: "Part Deux",
-    date: "Saturday 26th September 2026", 
+    date: "Sunday 27th September 2026", 
     subheading:
       "Please join us the next day at Chateau du Pujolet for a more relaxed celebration by the pool and grounds.",
     timeline: [
