@@ -38,6 +38,7 @@ export const SITE_CONTENT = {
 
   theDay: {
     heading: "Wedding Fête",
+    date: "Saturday 26th September 2026", 
     ceremony: "Ceremony: Église Saint-Pierre de Quint-Fonsegrives.", 
     reception: "Reception: Chateau du Pujolet, Vallesvilles.",
     timeline: [
@@ -54,6 +55,7 @@ export const SITE_CONTENT = {
 
   theWeekend: {
     heading: "Part Deux",
+    date: "Saturday 26th September 2026", 
     subheading:
       "Please join us the next day at Chateau du Pujolet for a more relaxed celebration by the pool and grounds.",
     timeline: [
@@ -73,7 +75,7 @@ export const SITE_CONTENT = {
     dresscode:
       "Garden Party. Bring swimmers and a towel - the pool is heated.",
     children:
-      "Children: We’d prefer no children, though we appreciate childcare isn’t always possible and understand if they need to come.",
+      "Children: We’d prefer no children, but can find a solution if childcare isn't possible.",
   },
 
   gettingToEvents: {

@@ -6,7 +6,7 @@ import TimelineIcon from "@/components/icons/TimelineIcon";
  * Icons are simple SVGs; times and labels come from config/content.ts.
  */
 export default function TheDay() {
-  const { heading, timeline, dresscode, children, ceremony, reception } = SITE_CONTENT.theDay;
+  const { heading, timeline, dresscode, children, ceremony, reception, date } = SITE_CONTENT.theDay;
 
   return (
     <section
@@ -19,18 +19,24 @@ export default function TheDay() {
           {heading}
         </h2>
 
+        {/* Date */}
+        <p className="mx-auto mt-2 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
+          {date}
+        </p>
+
         {/* Ceremony */}
-        <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
+        <p className="mx-auto mt-2 max-w-lg font-serif-main text-lg text-olive/70 md:text-1xl">
           {ceremony}
         </p>
 
+
         {/* Reception */}
-        <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
+        <p className="mx-auto mt-2 max-w-lg font-serif-main text-lg text-olive/70 md:text-1xl">
           {reception}
         </p>
 
         {/* Timeline */}
-        <div className="mt-10 mb-14 flex flex-wrap items-start justify-center gap-8 md:gap-12 lg:gap-14">
+        <div className="mt-8 mb-8 flex flex-wrap items-start justify-center gap-8 md:gap-12 lg:gap-14">
           {timeline.map((item) => (
             <div
               key={item.label}
@@ -58,11 +64,11 @@ export default function TheDay() {
                    
         </div>
  {/* Dresscode */}
- <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
+ <p className="mx-auto mt-2 max-w-lg font-serif-main text-lg text-olive/70 md:text-1xl">
           {dresscode}
         </p>
                 {/* Chldren */}
-                <p className="mx-auto mt-4 max-w-lg font-script text-xl text-olive/70 md:text-2xl">
+                <p className="mx-auto mt-2 max-w-lg font-serif-main text-lg text-olive/70 md:text-1xl">
           {children}
         </p>
       </div>

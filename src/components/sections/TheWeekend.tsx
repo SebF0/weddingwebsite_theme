@@ -9,7 +9,7 @@ const THE_WEEKEND_VIDEO_MOBILE = "/Assets/SriLankaMobileVert.mov";
  * Simple stacked layout with background video and overlay.
  */
 export default function TheWeekend() {
-  const { heading, subheading, timeline, dresscode, children } = SITE_CONTENT.theWeekend;
+  const { heading, subheading, timeline, dresscode, children, date } = SITE_CONTENT.theWeekend;
 
   return (
     <section
@@ -54,8 +54,14 @@ export default function TheWeekend() {
               {heading}
             </h2>
 
+        {/* Date */}
+        <p className="mx-auto mt-2 max-w-lg font-script text-xl text-white/70 md:text-2xl">
+          {date}
+        </p>
+
+
             {/* Subheading */}
-            <p className="mx-auto mt-4 max-w-lg font-script text-xl text-white/90 md:text-2xl">
+            <p className="mx-auto mt-2 max-w-lg font-serif-main text-lg text-white/70 md:text-1xl">
               {subheading}
             </p>
 
@@ -93,12 +99,12 @@ export default function TheWeekend() {
             </div>
 
             {/* Dresscode */}
-            <p className="mt-8 border-t border-white/20 pt-6 text-center font-script text-xl text-white/90 md:text-2xl">
+            <p className="mt-8 border-t border-white/20 pt-6 text-center font-serif-main text-lg text-white/70 md:text-1xl">
               Dresscode: {dresscode}
             </p>
 
             {/* Children note */}
-            <p className="mt-4 text-center font-script text-xl leading-relaxed text-white/90 md:text-2xl">
+            <p className="mt-4 text-center font-serif-main text-lg leading-relaxed text-white/70 md:text-1xl">
               {children}
             </p>
           </div>
