@@ -12,7 +12,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 
-const PUBLIC_PATHS = ["/favicon.ico", "/robots.txt", "/sitemap.xml"];
+const PUBLIC_PATHS = ["/favicon.ico", "/robots.txt", "/sitemap.xml", "/opengraph-image"];
 
 /** Returns true for paths that must never be blocked. */
 function isPublic(pathname: string): boolean {
