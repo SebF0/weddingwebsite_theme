@@ -217,7 +217,7 @@ export const SITE_CONTENT = {
           {
             type: "link",
             text: "Contribute here",
-            url: "https://www.paypal.com/pool/9mSkhoNeQq?sr=wccr",
+            url: "https://www.paypal.com/pool/9qz0npUIjp?sr=wccr",
           },
         ],
       },
