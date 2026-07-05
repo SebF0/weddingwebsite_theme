@@ -20,8 +20,21 @@ import {
 
 const TIMEOUT_MS = 20_000;
 const GENERIC_ERROR = "That didn't work. Try again.";
+const IS_DEBUG = process.env.NODE_ENV !== "production";
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+/** Formats an OpenAI APIError for debug responses, e.g. "OpenAI returned 401: invalid_api_key". */
+function formatOpenAIError(err: OpenAI.APIError): string {
+  const status = err.status ?? "unknown";
+  const detail = err.code ?? err.message;
+  return `OpenAI returned ${status}: ${detail}`;
+}
+
+/** Returns a detailed error string in debug mode, otherwise the generic user-facing message. */
+function apiErrorMessage(debugDetail: string): string {
+  return IS_DEBUG ? debugDetail : GENERIC_ERROR;
+}
 
 /** Validates the raw request body and returns the trimmed question or null. */
 function parseQuestion(body: unknown): string | null {
@@ -97,6 +110,8 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const latencyMs = Date.now() - startedAt;
 
     if (err instanceof Error && err.name === "AbortError") {
+      const debugDetail = `OpenAI request timed out after ${TIMEOUT_MS}ms`;
+      console.error("[/api/ask] OpenAI timeout:", debugDetail);
       await logResult({
         question,
         success: false,
@@ -104,10 +119,18 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         errorCode: "TIMEOUT",
         errorMessage: "OpenAI request exceeded 20s timeout",
       });
-      return NextResponse.json({ error: GENERIC_ERROR }, { status: 504 });
+      return NextResponse.json(
+        { error: apiErrorMessage(debugDetail) },
+        { status: 504 }
+      );
     }
 
     if (err instanceof OpenAI.APIError) {
+      console.error("[/api/ask] OpenAI error:", {
+        status: err.status,
+        message: err.message,
+        code: err.code,
+      });
       await logResult({
         question,
         success: false,
@@ -115,10 +138,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         errorCode: String(err.status ?? "OPENAI_ERROR"),
         errorMessage: err.message,
       });
-      return NextResponse.json({ error: GENERIC_ERROR }, { status: 502 });
+      return NextResponse.json(
+        { error: apiErrorMessage(formatOpenAIError(err)) },
+        { status: 502 }
+      );
     }
 
     const message = err instanceof Error ? err.message : "Unknown error";
+    console.error("[/api/ask] Unexpected error:", message);
     await logResult({
       question,
       success: false,
@@ -126,7 +153,10 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       errorCode: "UNKNOWN",
       errorMessage: message,
     });
-    return NextResponse.json({ error: GENERIC_ERROR }, { status: 500 });
+    return NextResponse.json(
+      { error: apiErrorMessage(message) },
+      { status: 500 }
+    );
   } finally {
     clearTimeout(timeout);
   }
