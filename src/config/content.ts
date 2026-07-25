@@ -42,7 +42,7 @@ export const SITE_CONTENT = {
     ceremony: "Ceremony: Église Saint-Pierre de Quint-Fonsegrives.", 
     reception: "Reception: Chateau du Pujolet, Vallesvilles.",
     timeline: [
-      { time: "2PM", label: "ceremony", location: "Église Saint-Pierre de Quint-Fonsegrives", icon: "rings" },
+      { time: "2:30PM", label: "ceremony", location: "Église Saint-Pierre de Quint-Fonsegrives", icon: "rings" },
       { time: "4PM", label: "drinks", location: "Serre", icon: "champagne" },
       { time: "5PM", label: "dinner", location: "Grange", icon: "dinner" },
       { time: "8PM", label: "cake cutting", location: "Reception Room", icon: "cake" },
