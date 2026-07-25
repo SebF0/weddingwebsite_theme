@@ -8,7 +8,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import OpenAI from "openai";
+import OpenAI, { APIError } from "openai";
 import sql from "@/lib/db";
 import {
   MODEL,
@@ -25,7 +25,7 @@ const IS_DEBUG = process.env.NODE_ENV !== "production";
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 /** Formats an OpenAI APIError for debug responses, e.g. "OpenAI returned 401: invalid_api_key". */
-function formatOpenAIError(err: OpenAI.APIError): string {
+function formatOpenAIError(err: APIError): string {
   const status = err.status ?? "unknown";
   const detail = err.code ?? err.message;
   return `OpenAI returned ${status}: ${detail}`;
@@ -125,7 +125,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       );
     }
 
-    if (err instanceof OpenAI.APIError) {
+    if (err instanceof APIError) {
       console.error("[/api/ask] OpenAI error:", {
         status: err.status,
         message: err.message,
