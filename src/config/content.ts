@@ -66,7 +66,7 @@ export const SITE_CONTENT = {
         icon: "brunch",
       },
       {
-        time: "2PM",
+        time: "1PM",
         label: "The Best of the Marché",
         description: "Food, drinks, music and lawn games",
         icon: "dinner",
