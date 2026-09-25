@@ -199,6 +199,25 @@ export const SITE_CONTENT = {
         ],
       },
       {
+        question: "Bus Pickup & Dropoff Locations",
+        answer: [
+          {
+            type: "text",
+            content: "Precise Timings TBC",
+          
+          },
+          {
+            type: "text",
+            content: "Location 1: Métro Jeanne d'Arc, 41 boulevard de Strasbourg Toulouse",
+          
+          },
+          {
+            type: "text",
+            content: "Location 2: Arrêt de bus Carmes, 41 rue du Languedoc Toulouse",
+          },
+        ],
+      },
+      {
         question: "Childcare",
         answer: [
           {
