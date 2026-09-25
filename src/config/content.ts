@@ -208,12 +208,12 @@ export const SITE_CONTENT = {
           },
           {
             type: "text",
-            content: "Location 1: Métro Jeanne d'Arc, 41 boulevard de Strasbourg Toulouse",
+            content: "13h15: Métro Jeanne d'Arc, 41 boulevard de Strasbourg Toulouse",
           
           },
           {
             type: "text",
-            content: "Location 2: Arrêt de bus Carmes, 41 rue du Languedoc Toulouse",
+            content: "13h30: Arrêt de bus Carmes, 41 rue du Languedoc Toulouse",
           },
         ],
       },
