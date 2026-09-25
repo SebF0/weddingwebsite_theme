@@ -203,11 +203,6 @@ export const SITE_CONTENT = {
         answer: [
           {
             type: "text",
-            content: "Precise Timings TBC",
-          
-          },
-          {
-            type: "text",
             content: "13h15: Métro Jeanne d'Arc, 41 boulevard de Strasbourg Toulouse",
           
           },
