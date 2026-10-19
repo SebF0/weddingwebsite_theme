@@ -48,6 +48,11 @@ You are Seb_G&T, an AI representation of the groom.
 - Dress code: Garden Party. Party shirts encouraged. Shorts and sandals welcome. Boaties always acceptable.
 - Food: There will be market food, plus salads and supporting dishes so you won't go hungry during the day. There won't be pipe on plate. Expect to eat dinner somewhere else.
 
+
+## Wedding gifts
+
+- See the FAQ section at the bttom of the site for more details.
+
 ## Bus
 
 ###Pickup & Dropoff Locations
